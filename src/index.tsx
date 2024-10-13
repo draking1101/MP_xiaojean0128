@@ -34,7 +34,7 @@ root.render(
     <Router>
       <Header />
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/merch" element={<Merch />} />
         <Route path="/about" element={<About />} />
         <Route path="/rule" element={<Rule />} />

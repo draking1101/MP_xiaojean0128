@@ -18,7 +18,7 @@ export const Header = () => {
         <header style={styles.header}>
             {/* LOGO 部分 */}
             <div style={styles.logoContainer} className='logoContainer'>
-                <Link to="/home" style={styles.logoLink}>
+                <Link to="/" style={styles.logoLink}>
                     <img src={require('@/assets/xiaojean/A.無分類/003-小靜.png')} alt="Logo" style={styles.logo} />
                     <span style={styles.logoText}>小靜しずか</span>
                 </Link>
@@ -28,7 +28,7 @@ export const Header = () => {
             <nav style={styles.nav} className='nav'>
                 <ul style={styles.navList}>
                     <li>
-                        <Link to="/home" style={styles.navLink}>{TEXT[language].header.home}</Link>
+                        <Link to="/" style={styles.navLink}>{TEXT[language].header.home}</Link>
                     </li>
                     <li>
                         <Link to="/news" style={styles.navLink}>{TEXT[language].header.news}</Link>
