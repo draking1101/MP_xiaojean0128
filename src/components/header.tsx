@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 // Styles
 import { HEADER } from '@/styles/const';
@@ -6,13 +6,10 @@ import '@/styles/header.css';  // 導入CSS
 // Components
 import { TEXT } from '@/components/const'
 import { SwtichLanguageButton } from '@/components/switch_language_button';
+import { useLanguage } from '@/components/LanguageContext';
 
 export const Header = () => {
-    const [language, setLanguage] = useState<'en' | 'zh'>('zh'); // 狀態管理語言，默認為中文
-
-    function changeLanguage() {
-        setLanguage(language === 'zh' ? 'en' : 'zh')
-    }
+    const { language, changeLanguage } = useLanguage();
 
     return (
         <header style={styles.header}>

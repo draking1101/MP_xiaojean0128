@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import reportWebVitals from '@/reportWebVitals';
 // Components
+import { LanguageProvider } from '@/components/LanguageContext';
 import { Header } from '@/components/header';
 // Pages
 import Home from '@/pages/home';
@@ -14,10 +15,11 @@ import Rule from '@/pages/rule';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <React.StrictMode>
-    {/* 全局樣式應用 */}
-    <style>
-      {`
+  <LanguageProvider>
+    <React.StrictMode>
+      {/* 全局樣式應用 */}
+      <style>
+        {`
         * {
           margin: 0;
           padding: 0;
@@ -30,18 +32,19 @@ root.render(
           padding: 0;
         }
       `}
-    </style>
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/merch" element={<Merch />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/rule" element={<Rule />} />
-        <Route path="/news" element={<News />} />
-      </Routes>
-    </Router>
-  </React.StrictMode>
+      </style>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/merch" element={<Merch />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/rule" element={<Rule />} />
+          <Route path="/news" element={<News />} />
+        </Routes>
+      </Router>
+    </React.StrictMode>
+  </LanguageProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
