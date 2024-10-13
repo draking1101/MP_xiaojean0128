@@ -1,0 +1,19 @@
+/* RWD：螢幕寬度低於720px時隱藏navbar */
+
+@media (max-width: 720px) {
+    .nav {
+        display: none;
+    }
+
+    /* LOGO置中 */
+    .logoContainer {
+        justify-content: center;
+        /* 將 LOGO 置中 */
+        padding-left: 0;
+        /* 移除左側的內邊距 */
+    }
+
+    .switch-language-button {
+        display: none;
+    }
+}

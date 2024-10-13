@@ -1,0 +1,19 @@
+.switch-language-button {
+    background-color: #0e2d46;
+    /* 預設按鈕背景顏色 */
+    color: #31a2ff;
+    /* 預設文字顏色 */
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.switch-language-button:hover {
+    background-color: #31a2ff;
+    color: #0e2d46
+        /* 滑鼠懸停時變黑 */
+}
