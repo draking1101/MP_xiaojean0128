@@ -1,5 +1,5 @@
 /* home.css */
-
+/* banner */
 .home-followButton {
     font-size: 24px;
     text-decoration: none;
@@ -24,7 +24,7 @@
     line-height: 60px;
 }
 
-.home-section1 {
+.home-section {
     width: 1024px;
     height: 600px;
     margin: 20px 0;
@@ -36,6 +36,7 @@
     align-items: center;
 }
 
+/* section1 */
 .home-section1IntroArea {
     width: 50%;
     display: flex;
@@ -54,11 +55,14 @@
 
 /* 媒體查詢，用於螢幕寬度低於720px時 */
 @media (max-width: 1024px) {
+
+    /* banner */
     .home-banner {
         padding: 15px 0;
     }
 
-    .home-section1 {
+    /* section1 */
+    .home-section {
         width: 90%;
         height: auto;
     }

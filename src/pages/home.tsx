@@ -71,7 +71,7 @@ export const Home = () => {
                 </a>
             </div>
 
-            <section className='home-section1'>
+            <section className='home-section'>
                 <div style={styles.section1Container} className='home-section1Container'>
                     <div className='home-section1IntroArea'>
                         <img src={require('@/assets/xiaojean/A.無分類/003-小靜.png')} alt="Logo" style={styles.section1Image} />
