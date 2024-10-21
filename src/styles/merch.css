@@ -1,0 +1,106 @@
+/* 預設 */
+#merch-body {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    text-align: center;
+}
+
+:root {
+    --Title-color: #ffd3e4;
+    --merchTitle-color: #D4EDFF;
+    --merchText-color: #e6add3;
+    --merchTitle-size: 24px;
+    --merchText-size: 20px;
+    --MerchWidth: 240px
+}
+
+#merch-body a {
+    text-align: center;
+    /* color: #4200bd; */
+    text-decoration: none;
+    width: calc(100%);
+    font-size: 24px;
+}
+
+
+/* #merch-body p {
+    font-size: 24px;
+} */
+
+#merch-area {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 90%;
+    height: auto;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 0px;
+}
+
+.merch-outterdiv {
+    /* background-color: rgba(0, 0, 0, 0.295); */
+    border-radius: 30px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin: 30px;
+    height: auto;
+}
+
+.merch-outterdiv h1 {
+    padding: 20px 0;
+    border-bottom: 4px solid #dfc5ae;
+    width: 60%;
+    color: var(--Title-color);
+}
+
+
+.merch-title {
+    font-size: var(--merchTitle-size);
+    color: var(--merchTitle-color);
+}
+
+.merch-text {
+    font-size: var(--merchText-size);
+    color: var(--merchText-color);
+}
+
+.merch-outterdiv ul {
+    display: flex;
+    padding: 15px 0;
+    width: 90%;
+    height: auto;
+    justify-content: space-around;
+    /* background-color: #D4EDFF; */
+    flex-wrap: wrap;
+}
+
+.merch-outterdiv ul li {
+    background-color: rgba(148, 121, 70, 0.5);
+    width: var(--MerchWidth);
+    height: 350px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.merch-outterdiv img {
+    width: 210px;
+    height: 210px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+@media screen and (max-width:1024px) {
+    #merch-body p {
+        font-size: 22px;
+    }
+}
