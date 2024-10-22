@@ -24,11 +24,6 @@
     font-size: 24px;
 }
 
-
-/* #merch-body p {
-    font-size: 24px;
-} */
-
 #merch-area {
     background-color: rgba(0, 0, 0, 0.5);
     width: 90%;
@@ -41,7 +36,6 @@
 }
 
 .merch-outterdiv {
-    /* background-color: rgba(0, 0, 0, 0.295); */
     border-radius: 30px;
     width: 90%;
     display: flex;
