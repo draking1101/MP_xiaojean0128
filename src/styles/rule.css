@@ -1,0 +1,68 @@
+/* 預設 */
+#rule-body {
+    padding: 50px 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 宣告變數 */
+:root {
+    --borderRadius: 30px;
+}
+
+/* 個別設定 */
+
+/* 一般設定 */
+#rule-body a {
+    text-align: center;
+    /* color: #14b8db; */
+    text-decoration: none;
+    width: calc(100%);
+}
+
+.rule-div {
+    margin: 15px 0;
+    padding: 20px;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    border-radius: var(--borderRadius);
+}
+
+.rule-textdiv {
+    width: 90%;
+}
+
+
+#rule-body h1 {
+    width: 100%;
+    padding: 0 0 10px;
+    border-bottom: 3px solid #dfc5ae;
+    color: #dfc5ae;
+}
+
+.rule-textdiv p {
+    padding: 10px 0 0;
+    font-size: 24px;
+    line-height: 35px;
+    color: #D4EDFF;
+}
+
+@media screen and (max-width:1024px) {
+    .rule-textdiv p {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .rule-textdiv p {
+        font-size: 20px;
+    }
+
+    .rule-textdiv {
+        width: 85%;
+    }
+}

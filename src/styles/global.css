@@ -1,3 +1,8 @@
+:root {
+    --page-background-color: rgba(206, 163, 179, 0.6);
+    --header-height: 70px;
+}
+
 body {
     height: auto;
     background-image: url('@/assets/xiaojean/D.同樂贈圖/001-女僕靜抬腿坐 by花生.jpg');
@@ -8,6 +13,16 @@ body {
     /* 背景圖片居中 */
     background-repeat: no-repeat;
     /* 禁止背景圖片重複 */
+}
+
+.page-body {
+    background-color: var(--page-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--header-height);
+    height: auto;
+    margin-top: 50px;
 }
 
 a {
