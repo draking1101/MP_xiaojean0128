@@ -65,6 +65,25 @@ export const TEXT = {
             episode3: 'Ep.3 - Losing streak in Platinum ranked games😭',
             episode4: 'Ep.4 - Encountered a cheater in ranked again?!',
             episode5: 'Ep.5 - Facing multiple opponents in clutch situation with Reyna again!',
+        },
+        news: {
+            newsBody: {
+                title: 'Latest News',
+                category: {
+                    latest: 'Latest',
+                    activity: 'Activity',
+                    stream: 'Stream',
+                }
+            }
+            , newsItem: [
+                {
+                    category: 'Stream',
+                    image: require('@/assets/xiaojean/A.無分類/003-小靜.png'),
+                    title: "Title",
+                    description: "Description",
+                    date: "Date",
+                },
+            ]
         }
     },
     zh: {
@@ -73,7 +92,7 @@ export const TEXT = {
             news: '最新消息',
             merch: '周邊',
             about: '關於我',
-            rule: '互動規則',
+            rule: '粉絲守則',
         },
         home: {
             banner: {
@@ -133,6 +152,25 @@ export const TEXT = {
             episode3: '第3集 - 白金場排位連輸心態爆炸😭',
             episode4: '第4集 - 排位又遇外掛?!照樣1發拿下MVP😎',
             episode5: '第5集 - 蕾娜再次一打多殘局',
+        },
+        news: {
+            newsBody: {
+                title: '最新消息',
+                category: {
+                    latest: '最新',
+                    activity: '活動',
+                    stream: '直播',
+                }
+            }
+            , newsItem: [
+                {
+                    category: 'Stream',
+                    image: require('@/assets/xiaojean/A.無分類/003-小靜.png'),
+                    title: "Title",
+                    description: "Description",
+                    date: "Date",
+                },
+            ]
         }
     },
 };

@@ -19,7 +19,6 @@ body {
     background-color: var(--page-background-color);
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: var(--header-height);
     height: auto;
     margin-top: 50px;
