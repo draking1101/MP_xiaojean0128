@@ -35,6 +35,13 @@
     cursor: pointer;
 }
 
+/* 當類別被選中時變色 */
+.active {
+    border-bottom: 3px solid #ffd3e4;
+    color: #ffd3e4;
+}
+
+/* 當類別被鼠標徘徊時變色 */
 .category:hover {
     border-bottom: 3px solid #ffd3e4;
     color: #ffd3e4;
@@ -55,6 +62,12 @@
     width: 100%;
     padding: 3% 0;
     border-radius: 10px;
+    border: 2px solid #00000000;
+}
+
+.news-item:hover {
+    border: 2px solid #ffd3e4;
+    cursor: pointer;
 }
 
 .news-image {
@@ -85,8 +98,87 @@
     height: 15%;
 }
 
+/* News details */
+.news-details-body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* 半透明背景 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.news-details-container {
+    /* text-align: center; */
+    background-color: #242734;
+    width: 1024px;
+    height: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.news-details-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.news-details-container button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff4f4f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.news-details-container button:hover {
+    background-color: #ff2f2f;
+}
+
+/* details content */
+.news-details-title {
+    text-align: center;
+    color: #ffd3e4;
+    font-size: 28px;
+}
+
+.news-details-date {
+    text-align: center;
+    color: gray;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.news-details-content {
+    color: #D4EDFF;
+    height: 80%;
+    overflow-y: scroll;
+    padding: 0 15px;
+}
+
+/*  */
+.news-details-content::-webkit-scrollbar {
+    display: none;
+}
+
+.ul-noType {
+    list-style: none;
+}
+
 @media screen and (max-width:1024px) {
     .news-body {
+        width: 90%;
+    }
+
+    .news-details-container {
         width: 90%;
     }
 }

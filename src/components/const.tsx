@@ -79,9 +79,10 @@ export const TEXT = {
                 {
                     category: 'Stream',
                     image: require('@/assets/xiaojean/A.無分類/003-小靜.png'),
-                    title: "Title",
+                    title: "測試標題1",
                     description: "Description",
-                    date: "Date",
+                    content: ``,
+                    date: "2024/10/29",
                 },
             ]
         }
@@ -166,9 +167,10 @@ export const TEXT = {
                 {
                     category: 'Stream',
                     image: require('@/assets/xiaojean/A.無分類/003-小靜.png'),
-                    title: "Title",
+                    title: "測試標題",
                     description: "Description",
-                    date: "Date",
+                    content: "test",
+                    date: "2024/10/29",
                 },
             ]
         }
