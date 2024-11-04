@@ -1,4 +1,6 @@
-import parse from 'html-react-parser'; // 安裝 html-react-parser 套件
+import React from 'react';
+// Components
+import parse from 'html-react-parser'; // 使HTML標籤能被當變數傳遞
 
 interface NewsDetailsProps {
     selectedNews: any;
@@ -6,7 +8,7 @@ interface NewsDetailsProps {
 }
 
 export const NewsDetails: React.FC<NewsDetailsProps> = ({ selectedNews, closeNewsDetails }) => {
-    const NewsContent = newsContentMap[selectedNews.title] || DefaultContent;
+    const NewsContent = newsContentMap[selectedNews.id] || DefaultContent;
 
     return (
         <div className="news-details-body">
@@ -19,7 +21,9 @@ export const NewsDetails: React.FC<NewsDetailsProps> = ({ selectedNews, closeNew
                 {/* <p className='news-details-content'>{selectedNews.content}</p> */}
                 <NewsContent />
                 {/* <img style={{}} src={selectedNews.image} alt={selectedNews.title} /> */}
-                <button onClick={closeNewsDetails}>關閉</button>
+                <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+                    <button onClick={closeNewsDetails}>關閉</button>
+                </div>
             </div>
         </div>
     )
@@ -27,24 +31,75 @@ export const NewsDetails: React.FC<NewsDetailsProps> = ({ selectedNews, closeNew
 
 const DefaultContent = () => <p className='news-details-content'>No content available</p>;
 
-// const ContentWrapper: React.FC<{ content: any }> = ({ content }) => (
-//     <p className="news-details-content">{content}</p>
-// );
-const ContentWrapper: React.FC<{ content: string }> = ({ content }) => {
-    return <div className="news-details-content">{parse(content)}</div>;
-};
 const newsContentMap: { [key: string]: React.FC } = {
-    測試標題: () => (
-        <ContentWrapper
-            content={`
-            <h1>測試標題</h1>
-            <p>這是測試內容</p>
+    1: () => (
+        <div className='news-details-content'>
+            <h1 style={{ color: 'white' }}>測試標題1</h1>
+            <p>這是另一個測試內容</p>
             <ul className="ul-noType">
-              <li>項目 1</li>
-              <li>項目 2</li>
+                <li>項目 A</li>
+                <li>項目 B</li>
             </ul>
-          `}
-        />
+        </div>
     ),
-    Test2: () => <ContentWrapper content="Test 2 Content" />,
+    2: () => {
+        return (
+            <div className='news-details-content'>
+                <h1 style={{ color: 'white' }}>測試標題2</h1>
+                <p>這是另一個測試內容</p>
+                <ul className="ul-noType">
+                    <li>項目 A</li>
+                    <li>項目 B</li>
+                </ul>
+                <h1 style={{ color: 'white' }}>測試標題2</h1>
+                <p>這是另一個測試內容</p>
+                <ul className="ul-noType">
+                    <li>項目 A</li>
+                    <li>項目 B</li>
+                </ul>
+                <h1 style={{ color: 'white' }}>測試標題2</h1>
+                <p>這是另一個測試內容</p>
+                <ul className="ul-noType">
+                    <li>項目 A</li>
+                    <li>項目 B</li>
+                </ul>
+                <h1 style={{ color: 'white' }}>測試標題2</h1>
+                <p>這是另一個測試內容</p>
+                <ul className="ul-noType">
+                    <li>項目 A</li>
+                    <li>項目 B</li>
+                </ul>
+                <h1 style={{ color: 'white' }}>測試標題2</h1>
+                <p>這是另一個測試內容</p>
+                <ul className="ul-noType">
+                    <li>項目 A</li>
+                    <li>項目 B</li>
+                </ul>
+                <h1 style={{ color: 'white' }}>測試標題2</h1>
+                <p>這是另一個測試內容</p>
+                <ul className="ul-noType">
+                    <li>項目 A</li>
+                    <li>項目 B</li>
+                </ul>
+                <h1 style={{ color: 'white' }}>測試標題2</h1>
+                <p>這是另一個測試內容</p>
+                <ul className="ul-noType">
+                    <li>項目 A</li>
+                    <li>項目 B</li>
+                </ul>
+                <h1 style={{ color: 'white' }}>測試標題2</h1>
+                <p>這是另一個測試內容</p>
+                <ul className="ul-noType">
+                    <li>項目 A</li>
+                    <li>項目 B</li>
+                </ul>
+                <h1 style={{ color: 'white' }}>測試標題2</h1>
+                <p>這是另一個測試內容</p>
+                <ul className="ul-noType">
+                    <li>項目 A</li>
+                    <li>項目 B</li>
+                </ul>
+            </div>
+        );
+    },
 };

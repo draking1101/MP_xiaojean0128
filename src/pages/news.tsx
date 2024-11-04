@@ -69,7 +69,7 @@ export const News = () => {
                             className="news-item"
                             onClick={() => openNewsDetails(news)}
                         >
-                            <img src={news.image} alt={news.title} className="news-image" />
+                            <img src={news.demoImage} alt={news.title} className="news-image" />
                             <div className="news-content">
                                 <h2 className='news-content-title'>{news.title}</h2>
                                 <p className='news-content-description'>{news.description}</p>
@@ -81,18 +81,6 @@ export const News = () => {
 
                 {/* 詳細內容模態框 */}
                 {selectedNews && (
-                    // <div className="news-details-body">
-                    //     <div className="news-details-container">
-                    //         {/* 標題 */}
-                    //         <h2 className='news-details-title'>{selectedNews.title}</h2>
-                    //         {/* 日期 */}
-                    //         <p className='news-details-date'>{selectedNews.date}</p>
-                    //         {/* 內容 */}
-                    //         <p className='news-details-content'>{selectedNews.content}</p>
-                    //         {/* <img style={{}} src={selectedNews.image} alt={selectedNews.title} /> */}
-                    //         <button onClick={closeNewsDetails}>關閉</button>
-                    //     </div>
-                    // </div>
                     <NewsDetails
                         selectedNews={selectedNews}
                         closeNewsDetails={closeNewsDetails}
