@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 // Images
 import logo from "@/assets/xiaojean/A.無分類/003-小靜.png"  // Logo
@@ -37,20 +37,22 @@ export const Header = () => {
 
     // 開關漢堡選單
     function toggleMenu() {
-        const headerbody = document.getElementById("header-body")
-        const nav = document.getElementById("nav")
-        const navList = document.getElementById("nav-list")
+        if (window.innerWidth < 720) {
+            const headerbody = document.getElementById("header-body")
+            const nav = document.getElementById("nav")
+            const navList = document.getElementById("nav-list")
 
-        if (!openMenu) {
-            nav.style.display = "flex"
-            headerbody.style.height = "550px"
-            navList.style.display = "flex"
-        } else {
-            headerbody.style.height = "70px"
-            navList.style.display = "none"
-            window.scrollTo({ top: 0, behavior: 'smooth' }); // 回到頁首
+            if (!openMenu) {
+                nav.style.display = "flex"
+                headerbody.style.height = "550px"
+                navList.style.display = "flex"
+            } else {
+                headerbody.style.height = "70px"
+                navList.style.display = "none"
+                window.scrollTo({ top: 0, behavior: 'smooth' }); // 回到頁首
+            }
+            setOpenMenu(!openMenu);
         }
-        setOpenMenu(!openMenu);
     }
 
     return (
@@ -61,9 +63,9 @@ export const Header = () => {
             </div>
             {/* LOGO 部分 */}
             <div className='logoContainer'>
-                <Link to="/" style={styles.logoLink}>
-                    <img src={logo} alt="Logo" style={styles.logo} />
-                    <span style={styles.logoText}>小靜しずか</span>
+                <Link to="/" className='logo-link'>
+                    <img src={logo} alt="Logo" className='header-logo' />
+                    <span className='header-logo-text'>小靜しずか</span>
                 </Link>
             </div>
 
@@ -71,19 +73,19 @@ export const Header = () => {
             <nav id='nav' className='nav'>
                 <ul id='nav-list'>
                     <li onClick={toggleMenu}>
-                        <Link to="/" style={styles.navLink}>{TEXT[language].header.home}</Link>
+                        <Link to="/" className='nav-link'>{TEXT[language].header.home}</Link>
                     </li>
                     <li onClick={toggleMenu}>
-                        <Link to="/news" style={styles.navLink}>{TEXT[language].header.news}</Link>
+                        <Link to="/news" className='nav-link'>{TEXT[language].header.news}</Link>
                     </li>
                     <li onClick={toggleMenu}>
-                        <Link to="/merch" style={styles.navLink}>{TEXT[language].header.merch}</Link>
+                        <Link to="/merch" className='nav-link'>{TEXT[language].header.merch}</Link>
                     </li>
                     <li onClick={toggleMenu}>
-                        <Link to="/about" style={styles.navLink}>{TEXT[language].header.about}</Link>
+                        <Link to="/about" className='nav-link'>{TEXT[language].header.about}</Link>
                     </li>
                     <li onClick={toggleMenu}>
-                        <Link to="/rule" style={styles.navLink}>{TEXT[language].header.rule}</Link>
+                        <Link to="/rule" className='nav-link'>{TEXT[language].header.rule}</Link>
                     </li>
                 </ul>
             </nav>
@@ -95,35 +97,4 @@ export const Header = () => {
             />
         </header>
     );
-};
-
-// 樣式
-const styles: { [key: string]: React.CSSProperties } = {
-    logoLink: {
-        display: 'flex',
-        alignItems: 'center',
-        textDecoration: 'none',
-    },
-    logo: {
-        height: HEADER.height,
-        cursor: 'pointer',
-    },
-    logoText: {
-        fontSize: HEADER.logoFontSize,
-        fontWeight: 'bold',
-        color: '#ffd3e4',
-    },
-    navList: {
-        listStyle: 'none',
-        display: 'flex',
-        gap: '20px',
-        margin: 0,
-        padding: 0,
-    },
-    navLink: {
-        color: HEADER.navTextColor,
-        textDecoration: 'none',
-        fontSize: HEADER.navTextFontSize,
-        fontWeight: '500',
-    }
 };
