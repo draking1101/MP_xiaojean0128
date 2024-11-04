@@ -1,3 +1,5 @@
+// Images
+import defaultImage from "@/assets/xiaojean/A.無分類/003-小靜.png"
 // Styles
 import '@/styles/merch.css';
 
@@ -10,7 +12,7 @@ export const Merch = () => {
                     <h1 className='merch-area-title'>限時周邊</h1>
                     <ul className='merch-item-container'>
                         <li className='merch-item'>
-                            <img src={require('@/assets/xiaojean/A.無分類/003-小靜.png')} alt="Lost" />
+                            <img src={defaultImage} alt="Lost" />
                             <p className="merch-item-title">敬請期待</p>
                             <p className="merch-item-text"></p>
                             <a className='merch-item-link' target="_blank" rel="noreferrer"><p>《敬請期待》</p></a>
