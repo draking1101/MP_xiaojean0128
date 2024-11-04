@@ -147,7 +147,7 @@
 }
 
 .news-details-container button:hover {
-    background-color: #ff2f2f;
+    background-color: #ff1f1f;
 }
 
 /* details content */
@@ -164,11 +164,15 @@
     margin: 5px 0;
 }
 
-.news-details-content {
+.news-details-content-container {
     color: #D4EDFF;
     height: 80%;
     overflow-y: scroll;
     padding: 0 15px;
+}
+
+.news-details-content-container::-webkit-scrollbar {
+    display: none;
 }
 
 .ul-noType {
