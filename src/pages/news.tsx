@@ -73,7 +73,7 @@ export const News = () => {
                             <div className="news-content">
                                 <h2 className='news-content-title'>{news.title}</h2>
                                 <p className='news-content-description'>{news.description}</p>
-                                <span className="news-content-date">{news.date}</span>
+                                <p className="news-content-date">{news.date}</p>
                             </div>
                         </div>
                     ))}

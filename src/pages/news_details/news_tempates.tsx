@@ -45,7 +45,7 @@ export const ContentWrapper: React.FC<ChildrenProps> = ({ children }) => {
 
 export const H1: React.FC<ChildrenProps> = ({ children }) => {
     return (
-        <h1 style={{ color: 'white' }}>
+        <h1 className='news-details-content-title'>
             {children}
         </h1>
     );
@@ -53,7 +53,7 @@ export const H1: React.FC<ChildrenProps> = ({ children }) => {
 
 export const P: React.FC<ChildrenProps> = ({ children }) => {
     return (
-        <p>
+        <p className='news-details-content-text'>
             {children}
         </p>
     );

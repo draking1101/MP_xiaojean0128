@@ -1,3 +1,5 @@
+import defaultImage from "@/assets/xiaojean/A.無分類/003-小靜.png"  // 預設圖片
+
 export const TEXT = {
     en: {
         header: {
@@ -30,7 +32,7 @@ export const TEXT = {
                         subtitle: 'Event posts, photos, and REELS.',
                     },
                     youtube: {
-                        title: 'YouTube',
+                        title: 'Youtube',
                         subtitle: 'Highlights, covers, and shorts.',
                     },
                     facebook: {
@@ -68,22 +70,14 @@ export const TEXT = {
                 {
                     id: "1",
                     category: 'Stream',
-                    demoImage: require('@/assets/xiaojean/A.無分類/003-小靜.png'),
-                    title: "Test Title1",
-                    description: "Description1",
-                    contentTitle1: "Test Content title",
-                    content: `Test Content`,
-                    date: "2024/10/29",
-                },
-                {
-                    id: "2",
-                    category: 'Stream',
-                    demoImage: require('@/assets/xiaojean/A.無分類/003-小靜.png'),
-                    title: "Test Title2",
-                    description: "Description2",
-                    contentTitle1: "Test Content title",
-                    content: `Test Content`,
-                    date: "2024/11/4",
+                    demoImage: defaultImage,
+                    title: "Deadline for the Extraordinary Journey",
+                    description: "I've been working hard to rank up in the Extraordinary Journey but the time pressure is really intense...",
+                    contentTitle1: "Extraordinary Journey",
+                    content: "I’ve been putting in a lot of effort to rank up in the Extraordinary Journey but due to time constraints, the pressure is intense. If I can't achieve my goal by the end of Act 9, this series might come to the end ( I’ll still be ranking, just not as intensively).",
+                    content2: "However, I'll continue to work hard on my youtube channel with stream highlights, shorts, covers, and similar content.",
+                    content3: "So… if you haven’t watched the latest episode, go check it out! I need your support and love. Love you all!",
+                    date: "2024/10/27",
                 },
             ]
         },
@@ -171,22 +165,14 @@ export const TEXT = {
                 {
                     id: "1",
                     category: 'Stream',
-                    demoImage: require('@/assets/xiaojean/A.無分類/003-小靜.png'),
-                    title: "測試標題",
-                    description: "Description1",
-                    contentTitle1: "內容標題",
-                    content: "內容",
-                    date: "2024/10/29",
-                },
-                {
-                    id: "2",
-                    category: 'Stream',
-                    demoImage: require('@/assets/xiaojean/A.無分類/003-小靜.png'),
-                    title: "測試標題2",
-                    description: "Description2",
-                    contentTitle1: "內容標題",
-                    content: "內容",
-                    date: "2024/11/4",
+                    demoImage: defaultImage,
+                    title: "有關超凡之旅的截止時間",
+                    description: "超凡之旅我很努力爬分了，但礙於時間問題壓力真的很大...",
+                    contentTitle1: "超凡之旅",
+                    content: "超凡之旅我很努力爬分了，但礙於時間問題壓力真的很大，因此第九幕結束若無法達成這個系列的影片也會告一個段落（還是會爬分但不會這麼拚了)",
+                    content2: "不過YT還是會繼續努力經營會發實況精華.shorts翻唱之類的",
+                    content3: "所以…最新一集的影片還沒看的先拿來煮了(X，沒我是說需要你們的支持協助 愛你們呦",
+                    date: "2024/10/27",
                 },
             ]
         },
