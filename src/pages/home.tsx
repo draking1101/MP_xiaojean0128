@@ -1,4 +1,14 @@
 import React, { useState } from 'react';
+// Images
+import banner from '@/assets/xiaojean/A.無分類/003-小靜.png' // Banner
+import marshmallow from "@/assets/xiaojean/C.社群網站的icon/Marshmallow-white.png" // 棉花糖
+import twitch from "@/assets/xiaojean/C.社群網站的icon/Twitch-white.png" // Twitch
+import instagram from '@/assets/xiaojean/C.社群網站的icon/Instagram-white.png' // Instagram
+import youtube from '@/assets/xiaojean/C.社群網站的icon/Youtube-white.png' // Youtube
+import twitter from "@/assets/xiaojean/C.社群網站的icon/Twitter-white.png" // Twitter
+import discord from "@/assets/xiaojean/C.社群網站的icon/Discord-white.png" // Discord
+import facebook from "@/assets/xiaojean/C.社群網站的icon/Facebook-white.png" // Facebook
+
 // style
 import '@/styles/home.css';  // 導入CSS
 // Components
@@ -75,7 +85,7 @@ export const Home = () => {
                 <section className='home-section'>
                     <div style={styles.section1Container} className='home-section1Container'>
                         <div className='home-section1IntroArea'>
-                            <img src={require('@/assets/xiaojean/A.無分類/003-小靜.png')} alt="Logo" style={styles.section1Image} />
+                            <img src={banner} alt="Logo" style={styles.section1Image} />
                             <p style={styles.section1Title}>{introText.basicInfo.title}</p>
                             <p>
                                 <ul style={styles.section1content}>
@@ -96,7 +106,7 @@ export const Home = () => {
                                     <img
                                         style={styles.section1LinkItemImage}
 
-                                        src={require("@/assets/xiaojean/C.社群網站的icon/Marshmallow-white.png")}
+                                        src={marshmallow}
                                         alt="圖片丟失，請聯繫嘯天"
                                     />
                                     <div style={styles.section1LinkItemContentContainer}>
@@ -110,7 +120,7 @@ export const Home = () => {
                                 <a style={styles.section1LinkContainer} target="_blank" title="在新分頁開啟連結" href="https://www.twitch.tv/xiaojean0128" rel="noreferrer">
                                     <img
                                         style={styles.section1LinkItemImage}
-                                        src={require("@/assets/xiaojean/C.社群網站的icon/Twitch-white.png")}
+                                        src={twitch}
                                         alt="圖片丟失，請聯繫嘯天"
                                     />
                                     <div style={styles.section1LinkItemContentContainer}>
@@ -125,7 +135,7 @@ export const Home = () => {
                                     href="https://www.instagram.com/xiaojean.0128?igshid=YmMyMTA2M2Y%3D" rel="noreferrer">
                                     <img
                                         style={styles.section1LinkItemImage}
-                                        src={require('@/assets/xiaojean/C.社群網站的icon/Instagram-white.png')}
+                                        src={instagram}
                                         alt="圖片丟失，請聯繫嘯天"
                                     />
                                     <div style={styles.section1LinkItemContentContainer}>
@@ -139,7 +149,7 @@ export const Home = () => {
                                 <a style={styles.section1LinkContainer} target="_blank" title="在新分頁開啟連結" href="https://www.youtube.com/@xiaojean0128" rel="noreferrer">
                                     <img
                                         style={styles.section1LinkItemImage}
-                                        src={require('@/assets/xiaojean/C.社群網站的icon/Youtube-white.png')}
+                                        src={youtube}
                                         alt="圖片丟失，請聯繫嘯天"
                                     />
                                     <div style={styles.section1LinkItemContentContainer}>
@@ -153,7 +163,7 @@ export const Home = () => {
                                 <a style={styles.section1LinkContainer} target="_blank" title="在新分頁開啟連結" href="https://x.com/xiaojean0128" rel="noreferrer">
                                     <img
                                         style={styles.section1LinkItemImage}
-                                        src={require("@/assets/xiaojean/C.社群網站的icon/Twitter-white.png")}
+                                        src={twitter}
                                         alt="圖片丟失，請聯繫嘯天"
                                     />
                                     <div style={styles.section1LinkItemContentContainer}>
@@ -167,7 +177,7 @@ export const Home = () => {
                                 <a style={styles.section1LinkContainer} target="_blank" title="在新分頁開啟連結" href="https://discord.gg/wyCzz4MJnh" rel="noreferrer">
                                     <img
                                         style={styles.section1LinkItemImage}
-                                        src={require("@/assets/xiaojean/C.社群網站的icon/Discord-white.png")}
+                                        src={discord}
                                         alt="圖片丟失，請聯繫嘯天"
                                     />
                                     <div style={styles.section1LinkItemContentContainer}>
@@ -182,7 +192,7 @@ export const Home = () => {
                                     href="https://www.facebook.com/xiaojean0128/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0" rel="noreferrer">
                                     <img
                                         style={styles.section1LinkItemImage}
-                                        src={require("@/assets/xiaojean/C.社群網站的icon/Facebook-white.png")}
+                                        src={facebook}
                                         alt="圖片丟失，請聯繫嘯天"
                                     />
                                     <div style={styles.section1LinkItemContentContainer}>
