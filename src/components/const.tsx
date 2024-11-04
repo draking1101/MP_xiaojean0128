@@ -16,17 +16,6 @@ export const TEXT = {
                 buttonText: '《Go to watch Virtual skin Debut》',
             },
             section1: {
-                intro: {
-                    title: 'Xiaojean',
-                    age: 'Age: 20',
-                    birthday: 'Birthday: 1/28',
-                    favoriteFood: 'Favorite Food: Curry',
-                    hobby: 'Hobbies: Singing, drawing, gaming',
-                    favoriteGame: 'Games: Mainly Valorant, occasionally trying other games',
-                    notice1: 'Currently working a full-time job, not a full-time VTuber',
-                    notice2: 'Please don’t fall for me; I only show favoritism towards girls',
-                    notice3: 'Collab invites 💌: xiaojean0128@gmail.com',
-                },
                 linkItem: {
                     marshmallow: {
                         title: 'Marshmallow',
@@ -77,14 +66,38 @@ export const TEXT = {
             }
             , newsItem: [
                 {
+                    id: "1",
                     category: 'Stream',
-                    image: require('@/assets/xiaojean/A.無分類/003-小靜.png'),
-                    title: "測試標題1",
-                    description: "Description",
+                    demoImage: require('@/assets/xiaojean/A.無分類/003-小靜.png'),
+                    title: "Test Title1",
+                    description: "Description1",
                     content: ``,
                     date: "2024/10/29",
                 },
+                {
+                    id: "2",
+                    category: 'Stream',
+                    demoImage: require('@/assets/xiaojean/A.無分類/003-小靜.png'),
+                    title: "Test Title2",
+                    description: "Description2",
+                    content: "test",
+                    date: "2024/11/4",
+                },
             ]
+        },
+        about: {
+            basicInfo: {
+                title: 'Xiaojean',
+                category: "Basic Information",
+                age: 'Age: 20',
+                birthday: 'Birthday: 1/28',
+                favoriteFood: 'Favorite Food: Curry',
+                hobby: 'Hobbies: Singing, drawing, gaming',
+                favoriteGame: 'Games: Mainly Valorant, occasionally trying other games',
+                notice1: 'Currently working a full-time job, not a full-time VTuber',
+                notice2: 'Please don’t fall for me; I only show favoritism towards girls',
+                notice3: 'Collab invites 💌: xiaojean0128@gmail.com',
+            },
         }
     },
     zh: {
@@ -104,17 +117,6 @@ export const TEXT = {
                 buttonText: '《前往觀看V皮初配信》',
             },
             section1: {
-                intro: {
-                    title: '小靜しずか',
-                    age: '年齡：20',
-                    birthday: '生日：1/28',
-                    favoriteFood: '食物：咖哩',
-                    hobby: '興趣：唱歌畫畫遊戲',
-                    favoriteGame: '遊戲：特戰為主，偶爾嘗試其他遊戲',
-                    notice1: '目前有正職，為非全職套皮實況主',
-                    notice2: '請勿暈船，我只對妹子有差別待遇',
-                    notice3: '聯動邀約💌：xiaojean0128@gmail.com',
-                },
                 linkItem: {
                     marshmallow: {
                         title: '棉花糖',
@@ -165,14 +167,38 @@ export const TEXT = {
             }
             , newsItem: [
                 {
+                    id: "1",
                     category: 'Stream',
-                    image: require('@/assets/xiaojean/A.無分類/003-小靜.png'),
+                    demoImage: require('@/assets/xiaojean/A.無分類/003-小靜.png'),
                     title: "測試標題",
-                    description: "Description",
+                    description: "Description1",
                     content: "test",
                     date: "2024/10/29",
                 },
+                {
+                    id: "2",
+                    category: 'Stream',
+                    demoImage: require('@/assets/xiaojean/A.無分類/003-小靜.png'),
+                    title: "測試標題2",
+                    description: "Description2",
+                    content: "test",
+                    date: "2024/11/4",
+                },
             ]
+        },
+        about: {
+            basicInfo: {
+                title: '小靜しずか',
+                category: "基本資料",
+                age: '年齡：20',
+                birthday: '生日：1/28',
+                favoriteFood: '食物：咖哩',
+                hobby: '興趣：唱歌畫畫遊戲',
+                favoriteGame: '遊戲：特戰為主，偶爾嘗試其他遊戲',
+                notice1: '目前有正職，為非全職套皮實況主',
+                notice2: '請勿暈船，我只對妹子有差別待遇',
+                notice3: '聯動邀約💌：xiaojean0128@gmail.com',
+            },
         }
     },
 };

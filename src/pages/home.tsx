@@ -11,6 +11,7 @@ import { faCircleRight as RegularCircleRight } from '@fortawesome/free-regular-s
 export const Home = () => {
     const { language } = useLanguage();
     const currentText = TEXT[language].home;
+    const introText = TEXT[language].about;
 
     // State to keep track of the current video URL
     const [currentVideoUrl, setCurrentVideoUrl] = useState("https://www.youtube.com/embed/Q-wmmlCssRE?si=ATH1j_IjZe_283X-");
@@ -75,17 +76,17 @@ export const Home = () => {
                     <div style={styles.section1Container} className='home-section1Container'>
                         <div className='home-section1IntroArea'>
                             <img src={require('@/assets/xiaojean/A.無分類/003-小靜.png')} alt="Logo" style={styles.section1Image} />
-                            <p style={styles.section1Title}>小靜しずか</p>
+                            <p style={styles.section1Title}>{introText.basicInfo.title}</p>
                             <p>
                                 <ul style={styles.section1content}>
-                                    <li>{currentText.section1.intro.age}</li>
-                                    <li>{currentText.section1.intro.birthday}</li>
-                                    <li>{currentText.section1.intro.favoriteFood}</li>
-                                    <li>{currentText.section1.intro.hobby}</li>
-                                    <li>{currentText.section1.intro.favoriteGame}</li>
-                                    <li>{currentText.section1.intro.notice1}</li>
-                                    <li>{currentText.section1.intro.notice2}</li>
-                                    <li>{currentText.section1.intro.notice3}</li>
+                                    <li>{introText.basicInfo.age}</li>
+                                    <li>{introText.basicInfo.birthday}</li>
+                                    <li>{introText.basicInfo.favoriteFood}</li>
+                                    <li>{introText.basicInfo.hobby}</li>
+                                    <li>{introText.basicInfo.favoriteGame}</li>
+                                    <li>{introText.basicInfo.notice1}</li>
+                                    <li>{introText.basicInfo.notice2}</li>
+                                    <li>{introText.basicInfo.notice3}</li>
                                 </ul>
                             </p>
                         </div>
