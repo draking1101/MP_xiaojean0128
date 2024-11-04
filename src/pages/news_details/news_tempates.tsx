@@ -1,6 +1,6 @@
 import React from 'react';
 // Components
-import { newsContentMap } from '@/pages/news_details/news_map';
+import { newsContentMap } from '@/pages/news_details/news_content_map';
 
 interface NewsDetailsProps {
     selectedNews: any;
