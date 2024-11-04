@@ -8,7 +8,7 @@ import youtube from '@/assets/xiaojean/C.社群網站的icon/Youtube-white.png' 
 import twitter from "@/assets/xiaojean/C.社群網站的icon/Twitter-white.png" // Twitter
 import discord from "@/assets/xiaojean/C.社群網站的icon/Discord-white.png" // Discord
 import facebook from "@/assets/xiaojean/C.社群網站的icon/Facebook-white.png" // Facebook
-
+import minecraftServer from "@/assets/xiaojean/A.無分類/007-cheapsever.png" // 麥塊 Cheap Server 圖片
 // style
 import '@/styles/home.css';  // 導入CSS
 // Components
@@ -203,6 +203,48 @@ export const Home = () => {
                                 </a>
                             </li>
                         </div>
+                    </div>
+                </section>
+                <section id='header-donate' className='home-section' style={{ flexDirection: 'column' }}>
+                    <h1>斗內</h1>
+                    <ul>
+                        <li>喜歡我想支持我的話可以斗內我喔~</li>
+                        <li>斗內的錢會拿來升級設備及委託圖</li>
+                        <li>想斗內的話請先讓自己吃飽並量力而為</li>
+                        <li>有斗內的記得告訴我讓我好好感謝</li>
+                        <li>
+                            <a href="https://docs.google.com/spreadsheets/d/1TjnjalZ_7pMc8rbbINDAwAyPbCDrVy49r3A2YDErcHI/edit?usp=sharing"
+                                target="_blank" rel="noreferrer">
+                                這裡可以看歷史的斗內贈禮名單
+                            </a>
+                        </li>
+                        <li id='header-donate-link'>
+                            <a href="https://payment.ecpay.com.tw/Broadcaster/Donate/666577222BF8531D4175DD355DC6FAD7"
+                                target="_blank" rel="noreferrer">
+                                【綠界科技】
+                            </a>
+                            |
+                            <a href="https://www.paypal.com/paypalme/XiaoJean?country.x=TW&locale.x=zh_TW" target="_blank" rel="noreferrer">
+                                【PAYPAL】
+                            </a> |
+                            <a href="https://payment.opay.tw/Broadcaster/Donate/658E154B04738822369BC4C46E432F3D" target="_blank" rel="noreferrer">
+                                【歐富寶】
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                {/* Minecraft Server */}
+                <section id='header-cheap-server' className='home-section' style={{ flexDirection: 'column', padding: '30px 0' }}>
+                    <img src={minecraftServer} alt="Lost" />
+                    <div>
+                        <p>
+                            這是我們會員麥塊伺服器的贊助商，他們是我的朋友，如果大家有需要租伺服器遊玩的話不妨去參考看看，有不同等級主機可以選擇，有問題也可以在他們的
+                            <a href="https://discord.com/invite/cheapserver" target="_blank" rel="noreferrer">
+                                dc群
+                            </a>
+                            詢問，使用我的優惠碼 xiaojean
+                            還能打95折，希望大家支持他們一下🥰
+                        </p>
                     </div>
                 </section>
             </div>
