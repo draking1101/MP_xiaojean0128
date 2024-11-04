@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import '@/styles/news.css';
 import { useLanguage } from '@/components/LanguageContext';
 import { TEXT } from '@/components/const';
-import { NewsDetails } from './news-templates/news-tempates';
+import { NewsDetails } from '@/pages/news_details/news_tempates';
 
 export const News = () => {
     const { language } = useLanguage();
@@ -63,7 +63,7 @@ export const News = () => {
                 </div>
 
                 <div className="news-list">
-                    {filterNews().map((news, index) => (
+                    {[...filterNews()].reverse().map((news, index) => (
                         <div
                             key={index}
                             className="news-item"
