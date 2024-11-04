@@ -1,7 +1,13 @@
 import React from 'react';
 import '@/styles/about.css';
+// Components
+import { TEXT } from '@/components/const';
+import { useLanguage } from '@/components/LanguageContext';
 
 export const About = () => {
+    const { language } = useLanguage();
+    const currentText = TEXT[language].about;
+
     return (
         <div id="about-body" className="page-body">
             {/* <div id="about-avatar">
@@ -10,17 +16,17 @@ export const About = () => {
         </div> */}
             <div className="about-div">
                 <div className="about-textdiv" >
-                    <h1>基本資料</h1>
+                    <h1>{currentText.basicInfo.category}</h1>
                     <p>
                         <ul>
-                            <li>年齡：20</li>
-                            <li>生日：01/28</li>
-                            <li>食物：咖哩</li>
-                            <li>興趣：唱歌畫畫遊戲</li>
-                            <li>遊戲：特戰為主，偶爾嘗試其他遊戲</li>
-                            <li>目前有正職，為非全職套皮實況主</li>
-                            <li>請勿暈船，我只對妹子有差別待遇</li>
-                            <li>聯動邀約💌：xiaojean0128@gmail.com</li>
+                            <li>{currentText.basicInfo.age}</li>
+                            <li>{currentText.basicInfo.birthday}</li>
+                            <li>{currentText.basicInfo.favoriteFood}</li>
+                            <li>{currentText.basicInfo.favoriteGame}</li>
+                            <li>{currentText.basicInfo.hobby}</li>
+                            <li>{currentText.basicInfo.notice1}</li>
+                            <li>{currentText.basicInfo.notice2}</li>
+                            <li>{currentText.basicInfo.notice3}</li>
                         </ul>
                     </p>
                 </div>
