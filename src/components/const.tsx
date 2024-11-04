@@ -71,7 +71,8 @@ export const TEXT = {
                     demoImage: require('@/assets/xiaojean/A.無分類/003-小靜.png'),
                     title: "Test Title1",
                     description: "Description1",
-                    content: ``,
+                    contentTitle1: "Test Content title",
+                    content: `Test Content`,
                     date: "2024/10/29",
                 },
                 {
@@ -80,7 +81,8 @@ export const TEXT = {
                     demoImage: require('@/assets/xiaojean/A.無分類/003-小靜.png'),
                     title: "Test Title2",
                     description: "Description2",
-                    content: "test",
+                    contentTitle1: "Test Content title",
+                    content: `Test Content`,
                     date: "2024/11/4",
                 },
             ]
@@ -172,7 +174,8 @@ export const TEXT = {
                     demoImage: require('@/assets/xiaojean/A.無分類/003-小靜.png'),
                     title: "測試標題",
                     description: "Description1",
-                    content: "test",
+                    contentTitle1: "內容標題",
+                    content: "內容",
                     date: "2024/10/29",
                 },
                 {
@@ -181,7 +184,8 @@ export const TEXT = {
                     demoImage: require('@/assets/xiaojean/A.無分類/003-小靜.png'),
                     title: "測試標題2",
                     description: "Description2",
-                    content: "test",
+                    contentTitle1: "內容標題",
+                    content: "內容",
                     date: "2024/11/4",
                 },
             ]
