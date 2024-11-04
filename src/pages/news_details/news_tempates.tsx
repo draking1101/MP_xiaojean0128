@@ -1,6 +1,5 @@
 import React from 'react';
 // Components
-import parse from 'html-react-parser'; // 使HTML標籤能被當變數傳遞
 import { newsContentMap } from '@/pages/news_details/news_map';
 
 interface NewsDetailsProps {
