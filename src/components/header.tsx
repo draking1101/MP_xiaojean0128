@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 // Images
 import logo from "@/assets/xiaojean/A.無分類/003-小靜.png"  // Logo
 // Styles
-import { HEADER } from '@/styles/const';
 import '@/styles/header.css';  // 導入CSS
 // Components
 import { TEXT } from '@/components/const'
@@ -18,12 +17,15 @@ export const Header = () => {
         // 當視窗寬度低於720px時，如果關閉漢堡選單在將視窗寬度恢復到 > 720px 會發生 導覽列消失的狀況
         // 因此添加監聽器監控寬度變化，當 > 720px 恢復顯示導覽列
         const handleResize = () => {
-            const navList = document.getElementById("nav-list");
+            const headerbody = document.getElementById("header-body")
+            const navList = document.getElementById("nav-list")
             if (window.innerWidth >= 720) {
                 navList.style.display = "flex";
+                headerbody.style.height = "70px"
+                setOpenMenu(false)
             } else {
                 navList.style.display = "none";
-            }
+            };
         };
 
         handleResize();
@@ -39,17 +41,26 @@ export const Header = () => {
     function toggleMenu() {
         if (window.innerWidth < 720) {
             const headerbody = document.getElementById("header-body")
-            const nav = document.getElementById("nav")
             const navList = document.getElementById("nav-list")
+            const links = document.querySelectorAll('.nav-link');
 
             if (!openMenu) {
-                nav.style.display = "flex"
-                headerbody.style.height = "550px"
+                // 開啟選單時執行
+                headerbody.style.height = "100%"
                 navList.style.display = "flex"
+                // 導覽列動畫
+                links.forEach((link, index) => {
+                    setTimeout(() => {
+                        link.classList.add('show');
+                    }, index * 100); // 每個 Link 延遲 100ms 顯示
+                });
             } else {
+                // 關閉選單時執行
                 headerbody.style.height = "70px"
                 navList.style.display = "none"
                 window.scrollTo({ top: 0, behavior: 'smooth' }); // 回到頁首
+                // 重置導覽列動畫
+                links.forEach(link => link.classList.remove('show'));
             }
             setOpenMenu(!openMenu);
         }
