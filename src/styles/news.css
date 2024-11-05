@@ -80,6 +80,7 @@
 
 .news-content {
     width: 75%;
+    height: auto;
     margin-left: 10px;
 }
 
@@ -93,7 +94,7 @@
 .news-content-description {
     font-size: 16px;
     color: gray;
-    height: 50px;
+    height: auto;
 }
 
 .news-content-date {
@@ -102,6 +103,7 @@
     justify-self: end;
     height: 15%;
     margin-top: 5px;
+    margin-right: 3%;
 }
 
 /* News details */

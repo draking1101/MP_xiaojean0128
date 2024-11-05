@@ -29,10 +29,10 @@ export const TEXT = {
         home: {
             banner: {
                 bannerTitle1: 'Welcome to Xiaojean Gang ♡',
-                bannerTitle2: "I love playing games, drawing, and singing ♡",
+                bannerTitle2: "I love games, drawing, and singing ♡",
                 bannerTitle3: "My simple wish is to",
-                bannerTitle4: 'bring joy to you during my stream time ♡',
-                buttonText: '《Go to watch Virtual skin Debut》',
+                bannerTitle4: 'bring joy to you during stream ♡',
+                buttonText: '《Go to Virtual skin Debut》',
             },
             section1: {
                 linkItem: {
@@ -101,9 +101,9 @@ export const TEXT = {
             newsBody: {
                 title: 'Latest News',
                 category: {
-                    all: 'All News',
-                    activity: 'Activity News',
-                    announcement: 'Announcement News',
+                    all: 'All',
+                    activity: 'Activity',
+                    announcement: 'Announcement',
                 }
             }
             , newsItem: [
@@ -111,7 +111,7 @@ export const TEXT = {
                     id: "1",
                     category: 'Stream',
                     demoImage: xiaojeanJail,
-                    title: "About the Extraordinary Journey and Streaming Schedule",
+                    title: "About the Extraordinary Journey",
                     description: "I've been working hard to rank up in the Extraordinary Journey but the time pressure is really intense...",
                     content: "I’ve been putting in a lot of effort to rank up in the Extraordinary Journey but due to time constraints, the pressure is intense. If I can't achieve my goal by the end of Act 9, this series might come to the end ( I’ll still be ranking, just not as intensively).",
                     content2: "However, I'll continue to work hard on my youtube channel with stream highlights, shorts, covers, and similar content.",
@@ -208,7 +208,7 @@ export const TEXT = {
                 bannerTitle1: "歡迎加入心結幫 ♡",
                 bannerTitle2: "我喜歡玩遊戲、畫畫、唱歌 ♡",
                 bannerTitle3: "簡單的心願就是",
-                bannerTitle4: '希望能在直播的時間讓你們感到快樂 ♡',
+                bannerTitle4: '希望直播時讓你們感到快樂 ♡',
                 buttonText: '《前往觀看V皮初配信》',
             },
             section1: {
@@ -278,9 +278,9 @@ export const TEXT = {
             newsBody: {
                 title: '最新消息',
                 category: {
-                    all: '所有消息',
-                    activity: '活動消息',
-                    announcement: '公告訊息',
+                    all: '所有',
+                    activity: '活動',
+                    announcement: '公告',
                 }
             }
             , newsItem: [

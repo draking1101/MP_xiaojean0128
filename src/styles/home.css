@@ -1,7 +1,7 @@
 /* home.css */
 /* banner */
 .home-followButton {
-    font-size: 24px;
+    font-size: 22px;
     text-decoration: none;
     color: #ffd3e4;
     background-color: rgba(0, 0, 0, 0.85);
@@ -19,7 +19,7 @@
     background-size: cover;
     text-align: center;
     align-content: 'center';
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
     line-height: 60px;
 }
@@ -170,6 +170,19 @@
         margin-top: 10px;
     }
 
+    /* Section 1.5 - tear */
+    #header-tear {
+        height: auto;
+    }
+
+    .tear-div-container {
+        flex-direction: column;
+    }
+
+    .tear-intro-container {
+        text-align: center;
+    }
+
     /* Setction 3 - Minecraft server */
     #header-cheap-server {
         width: 90%;
@@ -178,11 +191,16 @@
 }
 
 @media (max-width: 768px) {
+    .home-banner {
+        height: auto;
+        font-size: 18px;
+    }
+
     #header-donate-link a {
         font-size: 16px;
     }
 
-    #header-tear {
-        height: 300px;
+    .tear-intro-container li {
+        font-size: 14px;
     }
 }
