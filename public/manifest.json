@@ -1,19 +1,19 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "小靜しずか",
+  "name": "小靜的形象網站",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "008-rainyDoll.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "008-rainyDoll.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "008-rainyDoll.png",
       "type": "image/png",
       "sizes": "512x512"
     }

@@ -1,12 +1,17 @@
 import React from 'react';
 import { FOOTER } from '@/styles/const';
+import { TEXT, WEB_DETAILS } from '@/components/const';
+import { useLanguage } from '@/components/LanguageContext';
 
 export const Footer = () => {
+    const { language } = useLanguage();
+    const currentText = TEXT[language].footer;
+
     return (
         <footer style={styles.footer}>
             {/* Footer Bottom Text */}
             <div style={styles.footerBottom}>
-                <p>本站由 龍嘯天 所設計 ・ Powered by React @ 2024</p>
+                <p>{currentText.text}</p>
             </div>
         </footer>
     );
@@ -32,7 +37,7 @@ const styles: { [key: string]: React.CSSProperties } = {
         paddingTop: '10px',
         // marginTop: '20px',
         fontSize: '0.85rem',
-        color: '#ccc',
+        color: '#D4EDFF',
         textAlign: 'center'
     },
     title: {

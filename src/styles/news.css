@@ -11,7 +11,7 @@
 }
 
 .news-body-title {
-    color: #dfc5ae;
+    color: #ffd3e4;
     margin: 20px;
 }
 
@@ -75,10 +75,12 @@
 .news-image {
     width: 100px;
     height: 100px;
+    margin-left: 5px;
 }
 
 .news-content {
     width: 75%;
+    margin-left: 10px;
 }
 
 .news-content-title {
@@ -189,7 +191,9 @@
 }
 
 .news-details-content-text {
-    color: gray;
+    color: white;
+    font-size: 18px;
+    line-height: 26px
 }
 
 .news-details-content-text img {
@@ -205,6 +209,10 @@
 
     .news-content {
         width: 70%;
+    }
+
+    .news-content-title {
+        height: auto;
     }
 
     .news-details-container {

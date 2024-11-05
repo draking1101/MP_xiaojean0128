@@ -1,27 +1,22 @@
 import React, { useState } from 'react';
 // Images
-import banner from '@/assets/xiaojean/A.無分類/003-小靜.png' // Banner
-import marshmallow from "@/assets/xiaojean/C.社群網站的icon/Marshmallow-white.png" // 棉花糖
-import twitch from "@/assets/xiaojean/C.社群網站的icon/Twitch-white.png" // Twitch
-import instagram from '@/assets/xiaojean/C.社群網站的icon/Instagram-white.png' // Instagram
-import youtube from '@/assets/xiaojean/C.社群網站的icon/Youtube-white.png' // Youtube
-import twitter from "@/assets/xiaojean/C.社群網站的icon/Twitter-white.png" // Twitter
-import discord from "@/assets/xiaojean/C.社群網站的icon/Discord-white.png" // Discord
-import facebook from "@/assets/xiaojean/C.社群網站的icon/Facebook-white.png" // Facebook
+import introImage from '@/assets/xiaojean/A.無分類/009-lieOnHeart.png'
 import minecraftServer from "@/assets/xiaojean/A.無分類/007-cheapsever.png" // 麥塊 Cheap Server 圖片
+import tear from "@/assets/xiaojean/F.形象圖/B02-粉絲形象-放大版.png"
 // style
 import '@/styles/home.css';  // 導入CSS
 // Components
 import { ReactTyped } from 'react-typed';
 import { TEXT } from '@/components/const';
 import { useLanguage } from '@/components/LanguageContext';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleRight as RegularCircleRight } from '@fortawesome/free-regular-svg-icons'
+import { useLinkData } from '@/components/home/link_data';
+import { LinkItem } from '@/components/home/link_item';
 
 export const Home = () => {
     const { language } = useLanguage();
     const currentText = TEXT[language].home;
     const introText = TEXT[language].about;
+    const linkData = useLinkData();
 
     // State to keep track of the current video URL
     const [currentVideoUrl, setCurrentVideoUrl] = useState("https://www.youtube.com/embed/Q-wmmlCssRE?si=ATH1j_IjZe_283X-");
@@ -85,11 +80,11 @@ export const Home = () => {
                 <section className='home-section'>
                     <div style={styles.section1Container} className='home-section1Container'>
                         <div className='home-section1IntroArea'>
-                            <img src={banner} alt="Logo" style={styles.section1Image} />
+                            <img src={introImage} alt="Logo" style={styles.section1Image} />
                             <p style={styles.section1Title}>{introText.basicInfo.title}</p>
                             <p>
                                 <ul style={styles.section1content}>
-                                    <li>{introText.basicInfo.age}</li>
+                                    <li>{introText.basicInfo.height}</li>
                                     <li>{introText.basicInfo.birthday}</li>
                                     <li>{introText.basicInfo.favoriteFood}</li>
                                     <li>{introText.basicInfo.hobby}</li>
@@ -100,150 +95,73 @@ export const Home = () => {
                                 </ul>
                             </p>
                         </div>
+                        {/* 社群連結 */}
                         <div className='home-section1LinkArea'>
-                            <li style={styles.section1LinkItem}>
-                                <a style={styles.section1LinkContainer} target="_blank" title="在新分頁開啟連結" href="https://reurl.cc/zrE8L7" rel="noreferrer">
-                                    <img
-                                        style={styles.section1LinkItemImage}
-
-                                        src={marshmallow}
-                                        alt="圖片丟失，請聯繫嘯天"
-                                    />
-                                    <div style={styles.section1LinkItemContentContainer}>
-                                        <h1 style={styles.section1LinkItemContentTitle}>{currentText.section1.linkItem.marshmallow.title}</h1>
-                                        <p style={styles.section1LinkItemContentSubtitle}>{currentText.section1.linkItem.marshmallow.subtitle}</p>
-                                    </div>
-                                    <FontAwesomeIcon style={styles.section1LinkItemIcon} color='#ccccff' className="FontAwesomeIcon" size='2x' icon={RegularCircleRight} />
-                                </a>
-                            </li>
-                            <li style={styles.section1LinkItem}>
-                                <a style={styles.section1LinkContainer} target="_blank" title="在新分頁開啟連結" href="https://www.twitch.tv/xiaojean0128" rel="noreferrer">
-                                    <img
-                                        style={styles.section1LinkItemImage}
-                                        src={twitch}
-                                        alt="圖片丟失，請聯繫嘯天"
-                                    />
-                                    <div style={styles.section1LinkItemContentContainer}>
-                                        <h1 style={styles.section1LinkItemContentTitle}>{currentText.section1.linkItem.twitch.title}</h1>
-                                        <p style={styles.section1LinkItemContentSubtitle}>{currentText.section1.linkItem.twitch.subtitle}</p>
-                                    </div>
-                                    <FontAwesomeIcon style={styles.section1LinkItemIcon} color='#ccccff' className="FontAwesomeIcon" size='2x' icon={RegularCircleRight} />
-                                </a>
-                            </li>
-                            <li style={styles.section1LinkItem}>
-                                <a style={styles.section1LinkContainer} target="_blank" title="在新分頁開啟連結"
-                                    href="https://www.instagram.com/xiaojean.0128?igshid=YmMyMTA2M2Y%3D" rel="noreferrer">
-                                    <img
-                                        style={styles.section1LinkItemImage}
-                                        src={instagram}
-                                        alt="圖片丟失，請聯繫嘯天"
-                                    />
-                                    <div style={styles.section1LinkItemContentContainer}>
-                                        <h1 style={styles.section1LinkItemContentTitle}>{currentText.section1.linkItem.instagram.title}</h1>
-                                        <p style={styles.section1LinkItemContentSubtitle}>{currentText.section1.linkItem.instagram.subtitle}</p>
-                                    </div>
-                                    <FontAwesomeIcon style={styles.section1LinkItemIcon} color='#ccccff' className="FontAwesomeIcon" size='2x' icon={RegularCircleRight} />
-                                </a>
-                            </li>
-                            <li style={styles.section1LinkItem}>
-                                <a style={styles.section1LinkContainer} target="_blank" title="在新分頁開啟連結" href="https://www.youtube.com/@xiaojean0128" rel="noreferrer">
-                                    <img
-                                        style={styles.section1LinkItemImage}
-                                        src={youtube}
-                                        alt="圖片丟失，請聯繫嘯天"
-                                    />
-                                    <div style={styles.section1LinkItemContentContainer}>
-                                        <h1 style={styles.section1LinkItemContentTitle}>{currentText.section1.linkItem.youtube.title}</h1>
-                                        <p style={styles.section1LinkItemContentSubtitle}>{currentText.section1.linkItem.youtube.subtitle}</p>
-                                    </div>
-                                    <FontAwesomeIcon style={styles.section1LinkItemIcon} color='#ccccff' className="FontAwesomeIcon" size='2x' icon={RegularCircleRight} />
-                                </a>
-                            </li>
-                            <li style={styles.section1LinkItem}>
-                                <a style={styles.section1LinkContainer} target="_blank" title="在新分頁開啟連結" href="https://x.com/xiaojean0128" rel="noreferrer">
-                                    <img
-                                        style={styles.section1LinkItemImage}
-                                        src={twitter}
-                                        alt="圖片丟失，請聯繫嘯天"
-                                    />
-                                    <div style={styles.section1LinkItemContentContainer}>
-                                        <h1 style={styles.section1LinkItemContentTitle}>{currentText.section1.linkItem.twitter.title}</h1>
-                                        <p style={styles.section1LinkItemContentSubtitle}>{currentText.section1.linkItem.twitter.subtitle}</p>
-                                    </div>
-                                    <FontAwesomeIcon style={styles.section1LinkItemIcon} color='#ccccff' className="FontAwesomeIcon" size='2x' icon={RegularCircleRight} />
-                                </a>
-                            </li>
-                            <li style={styles.section1LinkItem}>
-                                <a style={styles.section1LinkContainer} target="_blank" title="在新分頁開啟連結" href="https://discord.gg/wyCzz4MJnh" rel="noreferrer">
-                                    <img
-                                        style={styles.section1LinkItemImage}
-                                        src={discord}
-                                        alt="圖片丟失，請聯繫嘯天"
-                                    />
-                                    <div style={styles.section1LinkItemContentContainer}>
-                                        <h1 style={styles.section1LinkItemContentTitle}>{currentText.section1.linkItem.discord.title}</h1>
-                                        <p style={styles.section1LinkItemContentSubtitle}>{currentText.section1.linkItem.discord.subtitle}</p>
-                                    </div>
-                                    <FontAwesomeIcon style={styles.section1LinkItemIcon} color='#ccccff' className="FontAwesomeIcon" size='2x' icon={RegularCircleRight} />
-                                </a>
-                            </li>
-                            <li style={styles.section1LinkItem}>
-                                <a style={styles.section1LinkContainer} target="_blank" title="在新分頁開啟連結"
-                                    href="https://www.facebook.com/xiaojean0128/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0" rel="noreferrer">
-                                    <img
-                                        style={styles.section1LinkItemImage}
-                                        src={facebook}
-                                        alt="圖片丟失，請聯繫嘯天"
-                                    />
-                                    <div style={styles.section1LinkItemContentContainer}>
-                                        <h1 style={styles.section1LinkItemContentTitle}>{currentText.section1.linkItem.facebook.title}</h1>
-                                        <p style={styles.section1LinkItemContentSubtitle}>{currentText.section1.linkItem.facebook.subtitle}</p>
-                                    </div>
-                                    <FontAwesomeIcon style={styles.section1LinkItemIcon} color='#ccccff' className="FontAwesomeIcon" size='2x' icon={RegularCircleRight} />
-                                </a>
-                            </li>
+                            {linkData.map((link, index) => (
+                                <LinkItem
+                                    key={index}
+                                    href={link.href}
+                                    imgSrc={link.imgSrc}
+                                    imgAlt={link.imgAlt}
+                                    title={link.title}
+                                    subtitle={link.subtitle}
+                                />
+                            ))}
+                        </div>
+                    </div>
+                </section>
+                <section id='header-tear' className='home-section'>
+                    <div className='tear-div-container'>
+                        <div className='tear-logo-container'>
+                            <img src={tear} alt="Logo" />
+                        </div>
+                        <div className='tear-intro-container'>
+                            <li>{currentText.tear[1]}</li>
+                            <li>{currentText.tear[2]}</li>
+                            <li>{currentText.tear[3]}</li>
+                            <li>{currentText.tear[4]}</li>
+                            <li>{currentText.tear[5]}</li>
                         </div>
                     </div>
                 </section>
                 <section id='header-donate' className='home-section' style={{ flexDirection: 'column' }}>
-                    <h1>斗內</h1>
+                    <h1>{currentText.section2.donate}</h1>
                     <ul>
-                        <li>喜歡我想支持我的話可以斗內我喔~</li>
-                        <li>斗內的錢會拿來升級設備及委託圖</li>
-                        <li>想斗內的話請先讓自己吃飽並量力而為</li>
-                        <li>有斗內的記得告訴我讓我好好感謝</li>
+                        <li>{currentText.section2.item1}</li>
+                        <li>{currentText.section2.item2}</li>
+                        <li>{currentText.section2.item3}</li>
+                        <li>{currentText.section2.item4}</li>
                         <li>
                             <a href="https://docs.google.com/spreadsheets/d/1TjnjalZ_7pMc8rbbINDAwAyPbCDrVy49r3A2YDErcHI/edit?usp=sharing"
                                 target="_blank" rel="noreferrer">
-                                這裡可以看歷史的斗內贈禮名單
+                                {currentText.section2.item5}
                             </a>
                         </li>
                         <li id='header-donate-link'>
                             <a href="https://payment.ecpay.com.tw/Broadcaster/Donate/666577222BF8531D4175DD355DC6FAD7"
                                 target="_blank" rel="noreferrer">
-                                【綠界科技】
+                                {currentText.section2.item6A}
                             </a>
                             |
                             <a href="https://www.paypal.com/paypalme/XiaoJean?country.x=TW&locale.x=zh_TW" target="_blank" rel="noreferrer">
-                                【PAYPAL】
+                                {currentText.section2.item6B}
                             </a> |
                             <a href="https://payment.opay.tw/Broadcaster/Donate/658E154B04738822369BC4C46E432F3D" target="_blank" rel="noreferrer">
-                                【歐富寶】
+                                {currentText.section2.item6C}
                             </a>
                         </li>
                     </ul>
                 </section>
                 {/* Minecraft Server */}
-                <section id='header-cheap-server' className='home-section' style={{ flexDirection: 'column', padding: '30px 0' }}>
+                <section id='header-cheap-server' style={{ flexDirection: 'column', padding: '30px 0' }}>
                     <img src={minecraftServer} alt="Lost" />
                     <div>
                         <p>
-                            這是我們會員麥塊伺服器的贊助商，他們是我的朋友，如果大家有需要租伺服器遊玩的話不妨去參考看看，有不同等級主機可以選擇，有問題也可以在他們的
+                            {currentText.section3.content1}
                             <a href="https://discord.com/invite/cheapserver" target="_blank" rel="noreferrer">
-                                dc群
+                                {currentText.section3.content2}
                             </a>
-                            詢問，使用我的優惠碼 xiaojean
-                            還能打95折，希望大家支持他們一下🥰
+                            {currentText.section3.content3}🥰
                         </p>
                     </div>
                 </section>
@@ -252,7 +170,7 @@ export const Home = () => {
     );
 };
 
-const styles: { [key: string]: React.CSSProperties } = {
+export const styles: { [key: string]: React.CSSProperties } = {
     home: {
         width: '100%',
         display: 'flex',
@@ -276,7 +194,8 @@ const styles: { [key: string]: React.CSSProperties } = {
         width: '160px',
         borderRadius: '50%',
         border: '2px solid #ffd3e4',
-        marginBottom: '10px'
+        marginBottom: '10px',
+        padding: 15
     },
     section1Title: {
         fontSize: '24px',

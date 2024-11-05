@@ -4,8 +4,7 @@
     --merchItemContainer-Title-color: #ffd3e4;
     --merchItemContainer-Title-size: 28px;
     /* Title, Text, Link font-color */
-    --merchItemTitle-color: #d4edff;
-    --merchItemText-color: #e6add3;
+    --merchItemTitle-color: #ffd3e4;
     /* Title, Text, Link font-size */
     --merchItemTitle-size: 22px;
     --merchItemTitle-size-1024px: 20px;
@@ -41,7 +40,7 @@
     padding: 0 0 20px;
     font-size: var(--merchItemContainer-Title-size);
     color: var(--merchItemContainer-Title-color);
-    border-bottom: 4px solid #dfc5ae;
+    border-bottom: 4px solid #ffd3e4;
     text-align: center;
 }
 

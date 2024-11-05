@@ -8,5 +8,5 @@ export const HEADER = {
 }
 
 export const FOOTER = {
-    backgroundColor: '#242734'
+    backgroundColor: 'rgba(0, 0, 0, 0.85)'
 }

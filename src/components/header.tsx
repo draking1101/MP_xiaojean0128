@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 // Images
-import logo from "@/assets/xiaojean/A.無分類/003-小靜.png"  // Logo
+import logo from "@/assets/xiaojean/A.無分類/008-rainyDoll.png"  // Logo
 // Styles
 import '@/styles/header.css';  // 導入CSS
 // Components
@@ -11,6 +11,7 @@ import { useLanguage } from '@/components/LanguageContext';
 
 export const Header = () => {
     const { language, changeLanguage } = useLanguage();
+    const currentText = TEXT[language].header;
     const [openMenu, setOpenMenu] = useState(false); // 漢堡選單狀態
 
     useEffect(() => {
@@ -66,6 +67,10 @@ export const Header = () => {
         }
     }
 
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' }); // 回到頁首
+    }
+
     return (
         <header id='header-body'>
             {/* 漢堡選單 */}
@@ -73,10 +78,10 @@ export const Header = () => {
                 <div>{(openMenu === true) ? "✖︎" : "☰"}</div>
             </div>
             {/* LOGO 部分 */}
-            <div className='logoContainer'>
+            <div className='logoContainer' onClick={scrollToTop}>
                 <Link to="/" className='logo-link'>
                     <img src={logo} alt="Logo" className='header-logo' />
-                    <span className='header-logo-text'>小靜しずか</span>
+                    <span className='header-logo-text'>{currentText.logoText}</span>
                 </Link>
             </div>
 
@@ -84,19 +89,19 @@ export const Header = () => {
             <nav id='nav' className='nav'>
                 <ul id='nav-list'>
                     <li onClick={toggleMenu}>
-                        <Link to="/" className='nav-link'>{TEXT[language].header.home}</Link>
+                        <Link to="/" className='nav-link'>{currentText.home}</Link>
                     </li>
                     <li onClick={toggleMenu}>
-                        <Link to="/news" className='nav-link'>{TEXT[language].header.news}</Link>
+                        <Link to="/news" className='nav-link'>{currentText.news}</Link>
                     </li>
                     <li onClick={toggleMenu}>
-                        <Link to="/merch" className='nav-link'>{TEXT[language].header.merch}</Link>
+                        <Link to="/merch" className='nav-link'>{currentText.merch}</Link>
                     </li>
                     <li onClick={toggleMenu}>
-                        <Link to="/about" className='nav-link'>{TEXT[language].header.about}</Link>
+                        <Link to="/about" className='nav-link'>{currentText.about}</Link>
                     </li>
                     <li onClick={toggleMenu}>
-                        <Link to="/rule" className='nav-link'>{TEXT[language].header.rule}</Link>
+                        <Link to="/rule" className='nav-link'>{currentText.rule}</Link>
                     </li>
                 </ul>
             </nav>

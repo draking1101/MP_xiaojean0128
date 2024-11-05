@@ -1,8 +1,8 @@
 .switch-language-button {
-    background-color: #053f6e;
     /* 預設按鈕背景顏色 */
-    color: #31a2ff;
+    background-color: white;
     /* 預設文字顏色 */
+    color: black;
     border: none;
     border-radius: 25px;
     padding: 10px 20px;
@@ -14,8 +14,8 @@
 }
 
 .switch-language-button:hover {
-    background-color: #31a2ff;
-    color: #053f6e
+    background-color: black;
+    color: white;
 }
 
 @media (max-width: 720px) {

@@ -46,7 +46,7 @@ export const News = () => {
                         className={`category ${selectedCategory === 'All' ? 'active' : ''}`}
                         onClick={() => handleCategoryClick('All')}
                     >
-                        {currentText.newsBody.category.latest}
+                        {currentText.newsBody.category.all}
                     </span>
                     <span
                         className={`category ${selectedCategory === 'Activity' ? 'active' : ''}`}
@@ -58,7 +58,7 @@ export const News = () => {
                         className={`category ${selectedCategory === 'Stream' ? 'active' : ''}`}
                         onClick={() => handleCategoryClick('Stream')}
                     >
-                        {currentText.newsBody.category.stream}
+                        {currentText.newsBody.category.announcement}
                     </span>
                 </div>
 

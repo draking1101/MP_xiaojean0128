@@ -10,16 +10,12 @@ export const About = () => {
 
     return (
         <div id="about-body" className="page-body">
-            {/* <div id="about-avatar">
-            <img id="about-avatarimg" src={require('../assets/小靜素材庫/011-小靜&水滴.jpg')} alt="Lost" />
-            <p>小靜しずか</p>
-        </div> */}
             <div className="about-div">
                 <div className="about-textdiv" >
                     <h1>{currentText.basicInfo.category}</h1>
                     <p>
                         <ul>
-                            <li>{currentText.basicInfo.age}</li>
+                            <li>{currentText.basicInfo.height}</li>
                             <li>{currentText.basicInfo.birthday}</li>
                             <li>{currentText.basicInfo.favoriteFood}</li>
                             <li>{currentText.basicInfo.favoriteGame}</li>
