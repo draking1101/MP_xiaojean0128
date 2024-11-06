@@ -7,13 +7,6 @@
     align-items: center;
 }
 
-/* 宣告變數 */
-:root {
-    --borderRadius: 30px;
-}
-
-/* 個別設定 */
-
 /* 一般設定 */
 #rule-body a {
     text-align: center;
@@ -25,15 +18,15 @@
 .rule-div {
     margin: 15px 0;
     padding: 20px;
-    width: 70%;
+    width: 1024px;
     background-color: rgba(0, 0, 0, 0.45);
     display: flex;
     justify-content: center;
-    border-radius: var(--borderRadius);
+    border-radius: 20px;
 }
 
 .rule-textdiv {
-    width: 90%;
+    width: 95%;
 }
 
 #rule-body h1 {
@@ -41,27 +34,32 @@
     padding: 0 0 10px;
     border-bottom: 3px solid #ffd3e4;
     color: #ffd3e4;
+    font-size: var(--h1-font-size);
 }
 
 .rule-textdiv p {
     padding: 10px 0 0;
-    font-size: 24px;
+    font-size: var(--p-font-size);
     line-height: 35px;
     color: #D4EDFF;
 }
 
 @media screen and (max-width:1024px) {
+    .rule-div {
+        width: 90%;
+    }
+
     .rule-textdiv p {
-        font-size: 22px;
+        font-size: var(--p-font-size-1024px);
     }
 }
 
 @media screen and (max-width:768px) {
     .rule-textdiv p {
-        font-size: 20px;
+        font-size: var(--p-font-size-768px);
     }
 
     .rule-textdiv {
-        width: 85%;
+        width: 90%;
     }
 }

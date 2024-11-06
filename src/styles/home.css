@@ -96,15 +96,15 @@
 
 #header-donate h1 {
     border-bottom: 3px solid #ffd3e4;
-    font-size: 40px;
-    padding: 30px 0;
+    font-size: 32px;
+    padding: 10px 0;
     text-align: center;
     width: 70%;
     color: #ffd3e4;
 }
 
 #header-donate ul {
-    margin-top: 30px;
+    margin-top: 10px;
     width: 70%;
     line-height: 45px;
 }
@@ -117,9 +117,8 @@
 /* Cheap Server */
 #header-cheap-server {
     width: 1024px;
-    height: 400px;
+    height: auto;
     margin: 20px 0;
-    padding: 20px 0;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 20px;
     display: flex;
@@ -186,7 +185,6 @@
     /* Setction 3 - Minecraft server */
     #header-cheap-server {
         width: 90%;
-        height: auto;
     }
 }
 
@@ -196,11 +194,26 @@
         font-size: 18px;
     }
 
+    /* donate */
+    #header-donate h1 {
+        font-size: 28px;
+    }
+
+    #header-donate li {
+        font-size: var(--p-font-size-768px);
+    }
+
     #header-donate-link a {
+        font-size: var(--p-font-size-768px);
+    }
+
+    /* section 1.5 -tear */
+    .tear-intro-container li {
         font-size: 16px;
     }
 
-    .tear-intro-container li {
-        font-size: 14px;
+    /* section 2 - cheap server */
+    #header-cheap-server p {
+        font-size: var(--p-font-size-768px);
     }
 }

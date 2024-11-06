@@ -144,9 +144,9 @@ export const TEXT = {
                 thousandSub: '1K Subscribers',
                 ff43_01: 'FF43 Merchandise',
                 anniversary_1st: '1st Anniversary',
-                anniversary_2nd_crowdfunding_01: '2nd Anniversary Crowdfunding',
-                anniversary_2nd_crowdfunding_02: '2nd Anniversary Crowdfunding',
-                anniversary_2nd_crowdfunding_03: '2nd Anniversary Crowdfunding',
+                anniversary_2nd_crowdfunding_01: '2.0 Crowdfunding Exclusive Merchandise',
+                anniversary_2nd_crowdfunding_02: '2.0 Crowdfunding Exclusive Merchandise',
+                anniversary_2nd_crowdfunding_03: '2nd Anniversary Appreciation Standee',
             },
             subTitle: {
                 default: '',
@@ -299,9 +299,9 @@ export const TEXT = {
         },
         merch: {
             category: {
-                title1: "限時周邊",
-                title2: "常駐周邊",
-                title3: "絕版周邊",
+                title1: "限時週邊",
+                title2: "常駐週邊",
+                title3: "絕版週邊",
             },
             img: {
                 default: richXiaoJean,
@@ -320,10 +320,10 @@ export const TEXT = {
                 lineEmoji: "小靜Line表情符號",
                 thousandSub: '千訂回饋周邊',
                 ff43_01: 'FF43 周邊',
-                anniversary_1st: '一周年周邊套組',
-                anniversary_2nd_crowdfunding_01: '二周年募資限定周邊',
-                anniversary_2nd_crowdfunding_02: '二周年募資限定周邊',
-                anniversary_2nd_crowdfunding_03: '二周年募資限定周邊',
+                anniversary_1st: '一週年周邊套組',
+                anniversary_2nd_crowdfunding_01: '2.0募資限定周邊',
+                anniversary_2nd_crowdfunding_02: '2.0募資限定周邊',
+                anniversary_2nd_crowdfunding_03: '二週年回饋立牌',
             },
             subTitle: {
                 default: '',
@@ -372,5 +372,3 @@ export const TEXT = {
         }
     },
 };
-
-

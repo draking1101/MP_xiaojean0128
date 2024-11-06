@@ -1,6 +1,12 @@
 :root {
     --page-background-color: rgba(206, 163, 179, 0.6);
     --header-height: 70px;
+    --h1-font-size: 28px;
+    --h1-font-size-1024px: 24px;
+    --h1-font-size-768px: 20px;
+    --p-font-size: 20px;
+    --p-font-size-1024px: 18px;
+    --p-font-size-768px: 16px;
 }
 
 body {
@@ -21,7 +27,6 @@ body {
     justify-content: center;
     margin-top: var(--header-height);
     height: auto;
-    margin-top: 70px;
 }
 
 a {

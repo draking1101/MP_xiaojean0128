@@ -38,9 +38,9 @@
 .merch-area-title {
     width: 60%;
     padding: 0 0 20px;
-    font-size: var(--merchItemContainer-Title-size);
+    font-size: var(--h1-font-size);
     color: var(--merchItemContainer-Title-color);
-    border-bottom: 4px solid #ffd3e4;
+    border-bottom: 3px solid #ffd3e4;
     text-align: center;
 }
 
@@ -93,8 +93,10 @@
     .merch-title {
         font-size: var(--merchItemTitle-size-1024px);
     }
+}
 
-    .merch-text {
-        font-size: var(--merchItemText-size-1024px);
+@media screen and (max-width: 768px) {
+    .merch-title {
+        font-size: var(--h1-font-size-768px);
     }
 }
