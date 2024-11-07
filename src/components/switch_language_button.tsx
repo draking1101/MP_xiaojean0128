@@ -11,7 +11,7 @@ export const SwtichLanguageButton: React.FC<SwitchLanguageButtonProps> = ({ lang
                 onClick={onClick}
                 className='switch-language-button'
             >
-                {language === 'zh' ? 'English' : '中文'}
+                <p>{language === 'zh' ? 'English' : '中文'}</p>
             </button>
         </div>
     );

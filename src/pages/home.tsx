@@ -129,25 +129,22 @@ export const Home = () => {
                     <ul>
                         <li>{currentText.section2.item1}</li>
                         <li>{currentText.section2.item2}</li>
-                        <li>{currentText.section2.item3}</li>
-                        <li>{currentText.section2.item4}</li>
-                        <li>
-                            <a href="https://docs.google.com/spreadsheets/d/1TjnjalZ_7pMc8rbbINDAwAyPbCDrVy49r3A2YDErcHI/edit?usp=sharing"
-                                target="_blank" rel="noreferrer">
-                                {currentText.section2.item5}
-                            </a>
-                        </li>
                         <li id='header-donate-link'>
                             <a href="https://payment.ecpay.com.tw/Broadcaster/Donate/666577222BF8531D4175DD355DC6FAD7"
                                 target="_blank" rel="noreferrer">
-                                {currentText.section2.item6A}
+                                {currentText.section2.Link1}
                             </a>
-                            |
                             <a href="https://www.paypal.com/paypalme/XiaoJean?country.x=TW&locale.x=zh_TW" target="_blank" rel="noreferrer">
-                                {currentText.section2.item6B}
-                            </a> |
+                                {currentText.section2.Link2}
+                            </a>
                             <a href="https://payment.opay.tw/Broadcaster/Donate/658E154B04738822369BC4C46E432F3D" target="_blank" rel="noreferrer">
-                                {currentText.section2.item6C}
+                                {currentText.section2.Link3}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://docs.google.com/spreadsheets/d/1TjnjalZ_7pMc8rbbINDAwAyPbCDrVy49r3A2YDErcHI/edit?usp=sharing"
+                                target="_blank" rel="noreferrer">
+                                {currentText.section2.item3}
                             </a>
                         </li>
                     </ul>

@@ -2,11 +2,7 @@
     --page-background-color: rgba(206, 163, 179, 0.6);
     --header-height: 70px;
     --h1-font-size: 28px;
-    --h1-font-size-1024px: 24px;
-    --h1-font-size-768px: 20px;
     --p-font-size: 20px;
-    --p-font-size-1024px: 18px;
-    --p-font-size-768px: 16px;
 }
 
 body {
@@ -32,4 +28,18 @@ body {
 a {
     text-decoration: none;
     color: #ccccff;
+}
+
+@media (max-width: 1024px) {
+    :root {
+        --h1-font-size: 24px;
+        --p-font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --h1-font-size: 20px;
+        --p-font-size: 16px;
+    }
 }

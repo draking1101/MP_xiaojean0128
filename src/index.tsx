@@ -12,8 +12,8 @@ import { Footer } from '@/components/footer';
 import { Home } from '@/pages/home';
 import { News } from '@/pages/news';
 import { Merch } from '@/pages/merch';
-import { About } from '@/pages/about';
-import { Rule } from '@/pages/rule';
+import { Commission } from '@/pages/commission';
+import { Live2D } from './pages/live2d';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -40,10 +40,10 @@ root.render(
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/merch" element={<Merch />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/rule" element={<Rule />} />
             <Route path="/news" element={<News />} />
+            <Route path="/merch" element={<Merch />} />
+            <Route path="/live2d" element={<Live2D />} />
+            <Route path="/commission" element={<Commission />} />
           </Routes>
           <Footer />
         </body>

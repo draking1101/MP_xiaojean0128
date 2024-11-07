@@ -19,16 +19,18 @@ export const WEB_DETAILS = {
 export const TEXT = {
     en: {
         header: {
-            logoText: "Xiaojean",
+            logoText: "XiaoJean",
             home: 'Home',
             news: 'News',
             merch: 'Merch',
             about: 'About',
             rule: 'Rules',
+            live2D: "Design",
+            commission: "Commission",
         },
         home: {
             banner: {
-                bannerTitle1: 'Welcome to Xiaojean Gang ♡',
+                bannerTitle1: 'Welcome to XiaoJean Gang ♡',
                 bannerTitle2: "I love games, drawing, and singing ♡",
                 bannerTitle3: "My simple wish is to",
                 bannerTitle4: 'bring joy to you during stream ♡',
@@ -67,22 +69,20 @@ export const TEXT = {
                 }
             },
             tear: {
-                1: "這是我的粉絲形象心結",
-                2: "縮寫跟我的名字XJ一樣",
-                3: "肚子上是我的星座水瓶符號",
-                4: "因為常常跟大家心結又愛哭",
-                5: "所以是淚滴加上心結的元素",
+                1: "This is my fan mascot, XinJie.",
+                2: "The abbreviation is the same as my name, XJ.",
+                3: "The symbol on its belly represents my Aquarius sign.",
+                4: "It's often teary-eyed because of the 'heart ties' I have with everyone and my tendency to cry.",
+                5: "So, it combines a teardrop with elements of a heart tie.",
             },
             section2: {
                 donate: "Donate",
-                item1: "If you like me and want to support, feel free to donate!",
-                item2: "Donations will go towards upgrading equipment and commissioning artwork.",
-                item3: "Please make sure to eat well and donate within your means.",
-                item4: "If you donate, let me know so I can thank you properly!",
-                item5: "You can view the history of donation gifts here.",
-                item6A: "[Greenworld Technology] ",
-                item6B: " [PayPal] ",
-                item6C: " [O'Pay]",
+                item1: "If you’d like to support me, feel free to donate!",
+                item2: "But please make sure you’ve eaten and donate within your means.",
+                item3: "List of Past Donation Gifts",
+                Link1: "【Greenworld】",
+                Link2: "【O’Pay】",
+                Link3: "【PAYPAL】",
             },
             section3: {
                 content1: "This is the sponsor of our member Minecraft server. They’re my friends, and if anyone needs to rent a server for gaming, feel free to check them out! They offer different levels of servers to choose from, and if you have any questions, you can ask in their",
@@ -103,7 +103,7 @@ export const TEXT = {
                 category: {
                     all: 'All',
                     activity: 'Activity',
-                    announcement: 'Announcement',
+                    announcement: 'Announce',
                 }
             }
             , newsItem: [
@@ -122,9 +122,9 @@ export const TEXT = {
         },
         merch: {
             category: {
-                title1: "Limited Edition Merchandise",
-                title2: "Regular Merchandise",
-                title3: "Discontinued Merchandise",
+                title1: "Limited",
+                title2: "Regular",
+                title3: "Discontinued",
             },
             img: {
                 default: richXiaoJean,
@@ -142,22 +142,11 @@ export const TEXT = {
                 lineSticker: "Line Stickers",
                 lineEmoji: "Line Emojis",
                 thousandSub: '1K Subscribers',
-                ff43_01: 'FF43 Merchandise',
+                ff43_01: 'FF43',
                 anniversary_1st: '1st Anniversary',
-                anniversary_2nd_crowdfunding_01: '2.0 Crowdfunding Exclusive Merchandise',
-                anniversary_2nd_crowdfunding_02: '2.0 Crowdfunding Exclusive Merchandise',
-                anniversary_2nd_crowdfunding_03: '2nd Anniversary Appreciation Standee',
-            },
-            subTitle: {
-                default: '',
-                lineSticker: "",
-                lineEmoji: "",
-                thousandSub: 'Includes mouse pad, double-sided pillow',
-                ff43_01: 'Signed wall scroll, postcard, canvas bag',
-                anniversary_1st: 'Includes standee, fan buddy, keychain',
-                anniversary_2nd_crowdfunding_01: 'Keychain & fan buddy',
-                anniversary_2nd_crowdfunding_02: 'Special EasyCard & card holder',
-                anniversary_2nd_crowdfunding_03: 'Chibi standee',
+                anniversary_2nd_crowdfunding_01: '2.0 Crowdfunding',
+                anniversary_2nd_crowdfunding_02: '2.0 Crowdfunding',
+                anniversary_2nd_crowdfunding_03: '2nd Anniversary',
             },
             link: {
                 commingSoon: '《Coming Soon》',
@@ -168,7 +157,7 @@ export const TEXT = {
         },
         about: {
             basicInfo: {
-                title: 'Xiaojean',
+                title: 'XiaoJean',
                 category: "Basic Information",
                 height: 'Height：158',
                 birthday: 'Birthday: 1/28',
@@ -189,6 +178,11 @@ export const TEXT = {
                 7: "2024.01.28 Vtuber Debut Stream / Level 16 Vehicle",
                 8: "2024.07.30 Twitch Partners ✓",
             },
+            derivativeWork: {
+                1: "Any character illustration may be used for commissions or fan art.",
+                2: "Use of images for profit or feeding into AI is prohibited.",
+                3: "• No R18 content; R16 borderline content is acceptable.",
+            },
         },
         footer: {
             text: `This website was designed by Xiaotian ${WEB_DETAILS.version} ・ Powered by React @ 2024`,
@@ -202,6 +196,8 @@ export const TEXT = {
             merch: '周邊',
             about: '關於我',
             rule: '粉絲守則',
+            live2D: "形象展示",
+            commission: "委託相關",
         },
         home: {
             banner: {
@@ -251,15 +247,13 @@ export const TEXT = {
                 5: "所以是淚滴加上心結的元素",
             },
             section2: {
-                donate: "抖內",
-                item1: "喜歡我想支持我的話可以斗內我喔~",
-                item2: "斗內的錢會拿來升級設備及委託圖",
-                item3: "想斗內的話請先讓自己吃飽並量力而為 ",
-                item4: "有斗內的記得告訴我讓我好好感謝",
-                item5: "這裡可以看歷史的斗內贈禮名單",
-                item6A: "【綠界科技】",
-                item6B: "【PAYPAL】",
-                item6C: "【歐富寶】",
+                donate: "斗內",
+                item1: "想支持我的話歡迎斗內",
+                item2: "不過請吃飽並量力而為",
+                item3: "歷史斗內贈禮名單",
+                Link1: "【綠界】",
+                Link2: "【歐富寶】",
+                Link3: "【PAYPAL】",
             },
             section3: {
                 content1: "這是我們會員麥塊伺服器的贊助商，他們是我的朋友，如果大家有需要租伺服器遊玩的話不妨去參考看看，有不同等級主機可以選擇，有問題也可以在他們的",
@@ -299,9 +293,9 @@ export const TEXT = {
         },
         merch: {
             category: {
-                title1: "限時週邊",
-                title2: "常駐週邊",
-                title3: "絕版週邊",
+                title1: "限時周邊",
+                title2: "常駐周邊",
+                title3: "絕版周邊",
             },
             img: {
                 default: richXiaoJean,
@@ -318,27 +312,16 @@ export const TEXT = {
                 commingSoon: '敬請期待',
                 lineSticker: "小靜Line貼圖",
                 lineEmoji: "小靜Line表情符號",
-                thousandSub: '千訂回饋周邊',
-                ff43_01: 'FF43 周邊',
-                anniversary_1st: '一週年周邊套組',
-                anniversary_2nd_crowdfunding_01: '2.0募資限定周邊',
-                anniversary_2nd_crowdfunding_02: '2.0募資限定周邊',
-                anniversary_2nd_crowdfunding_03: '二週年回饋立牌',
-            },
-            subTitle: {
-                default: '',
-                lineSitcker: "",
-                lineEmoji: "",
-                thousandSub: '含滑鼠墊、雙面抱枕',
-                ff43_01: '簽名掛軸、明信片、帆布袋',
-                anniversary_1st: '含立牌、飯友、吊飾',
-                anniversary_2nd_crowdfunding_01: '吊飾 & 飯友',
-                anniversary_2nd_crowdfunding_02: '特殊悠遊卡 & 卡套',
-                anniversary_2nd_crowdfunding_03: 'Q版立牌',
+                thousandSub: '千訂回饋',
+                ff43_01: 'FF43',
+                anniversary_1st: '一週年套組',
+                anniversary_2nd_crowdfunding_01: '2.0募資限定',
+                anniversary_2nd_crowdfunding_02: '2.0募資限定',
+                anniversary_2nd_crowdfunding_03: '二週年立牌',
             },
             link: {
                 commingSoon: '《敬請期待》',
-                default: '《點擊前往周邊》',
+                default: '《點擊前往》',
                 lineSitcker: 'https://store.line.me/stickershop/product/25838548/zh-Hant?utm_source=gnsh_stickerDetail',
                 lineEmoji: "https://store.line.me/emojishop/product/65d99d86357e3d15ccfcf4be/zh-Hant?lang=zh-Hant&utm_source=gnsh_sticonDetail",
             }
@@ -365,7 +348,12 @@ export const TEXT = {
                 6: "2023.11.27 1000訂閱✓特別感謝惜竹♥",
                 7: "2024.01.28 V皮初配信/車車16級",
                 8: "2024.07.30 合作夥伴✓",
-            }
+            },
+            derivativeWork: {
+                1: "可使用任何形象立繪委託或二創",
+                2: "禁止將圖拿來盈利或投餵AI使用",
+                3: "禁止R18創作，R16擦邊圖可接受",
+            },
         },
         footer: {
             text: `本站由 龍嘯天 所設計 ${WEB_DETAILS.version} ・ Powered by React @ 2024`

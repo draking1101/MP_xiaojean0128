@@ -59,11 +59,13 @@ export const Header = () => {
                 // 關閉選單時執行
                 headerbody.style.height = "70px"
                 navList.style.display = "none"
-                window.scrollTo({ top: 0, behavior: 'smooth' }); // 回到頁首
+                scrollToTop();
                 // 重置導覽列動畫
                 links.forEach(link => link.classList.remove('show'));
             }
             setOpenMenu(!openMenu);
+        } else {
+            scrollToTop();
         }
     }
 
@@ -78,7 +80,7 @@ export const Header = () => {
                 <div>{(openMenu === true) ? "✖︎" : "☰"}</div>
             </div>
             {/* LOGO 部分 */}
-            <div className='logoContainer' onClick={scrollToTop}>
+            <div className='logoContainer' onClick={toggleMenu}>
                 <Link to="/" className='logo-link'>
                     <img src={logo} alt="Logo" className='header-logo' />
                     <span className='header-logo-text'>{currentText.logoText}</span>
@@ -98,10 +100,10 @@ export const Header = () => {
                         <Link to="/merch" className='nav-link'>{currentText.merch}</Link>
                     </li>
                     <li onClick={toggleMenu}>
-                        <Link to="/about" className='nav-link'>{currentText.about}</Link>
+                        <Link to="/live2D" className='nav-link'>{currentText.live2D}</Link>
                     </li>
                     <li onClick={toggleMenu}>
-                        <Link to="/rule" className='nav-link'>{currentText.rule}</Link>
+                        <Link to="/commission" className='nav-link'>{currentText.commission}</Link>
                     </li>
                 </ul>
             </nav>

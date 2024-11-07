@@ -209,12 +209,17 @@
         width: 90%;
     }
 
+    .news-body-title {
+        font-size: 28px;
+    }
+
     .news-content {
         width: 70%;
     }
 
     .news-content-title {
         height: auto;
+        font-size: var(--h1-font-size);
     }
 
     .news-details-container {

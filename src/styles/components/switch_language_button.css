@@ -20,9 +20,26 @@
 
 @media (max-width: 768px) {
     .switch-language-button {
+        display: flex;
+        justify-content: center;
+        /* width: 30%; */
         position: fixed;
-        right: 20px;
-        top: 15px;
+        right: 0px;
+        top: 18px;
         margin-right: 0px;
+    }
+
+    .switch-language-button p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 330px) {
+    .switch-language-button {
+        width: 60px;
+    }
+
+    .switch-language-button p {
+        font-size: 10px;
     }
 }
