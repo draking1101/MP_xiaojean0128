@@ -59,7 +59,6 @@ export const Header = () => {
                 // 關閉選單時執行
                 headerbody.style.height = "70px"
                 navList.style.display = "none"
-                scrollToTop();
                 // 重置導覽列動畫
                 links.forEach(link => link.classList.remove('show'));
             }
@@ -73,6 +72,11 @@ export const Header = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' }); // 回到頁首
     }
 
+    function scrollTopAfterNav() {
+        toggleMenu();
+        scrollToTop();
+    }
+
     return (
         <header id='header-body'>
             {/* 漢堡選單 */}
@@ -80,7 +84,7 @@ export const Header = () => {
                 <div>{(openMenu === true) ? "✖︎" : "☰"}</div>
             </div>
             {/* LOGO 部分 */}
-            <div className='logoContainer' onClick={toggleMenu}>
+            <div className='logoContainer' onClick={scrollToTop}>
                 <Link to="/" className='logo-link'>
                     <img src={logo} alt="Logo" className='header-logo' />
                     <span className='header-logo-text'>{currentText.logoText}</span>
@@ -90,19 +94,19 @@ export const Header = () => {
             {/* 導航欄 */}
             <nav id='nav' className='nav'>
                 <ul id='nav-list'>
-                    <li onClick={toggleMenu}>
+                    <li onClick={scrollTopAfterNav}>
                         <Link to="/" className='nav-link'>{currentText.home}</Link>
                     </li>
-                    <li onClick={toggleMenu}>
+                    <li onClick={scrollTopAfterNav}>
                         <Link to="/news" className='nav-link'>{currentText.news}</Link>
                     </li>
-                    <li onClick={toggleMenu}>
+                    <li onClick={scrollTopAfterNav}>
                         <Link to="/merch" className='nav-link'>{currentText.merch}</Link>
                     </li>
-                    <li onClick={toggleMenu}>
+                    <li onClick={scrollTopAfterNav}>
                         <Link to="/live2D" className='nav-link'>{currentText.live2D}</Link>
                     </li>
-                    <li onClick={toggleMenu}>
+                    <li onClick={scrollTopAfterNav}>
                         <Link to="/commission" className='nav-link'>{currentText.commission}</Link>
                     </li>
                 </ul>

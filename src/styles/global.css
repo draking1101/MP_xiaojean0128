@@ -15,14 +15,15 @@ body {
     /* 背景圖片居中 */
     background-repeat: no-repeat;
     /* 禁止背景圖片重複 */
+    overscroll-behavior: none;
 }
 
 .page-body {
     background-color: var(--page-background-color);
     display: flex;
     justify-content: center;
-    margin-top: var(--header-height);
     height: auto;
+    padding-top: 70px;
 }
 
 a {

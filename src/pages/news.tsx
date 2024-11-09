@@ -55,8 +55,8 @@ export const News = () => {
                         {currentText.newsBody.category.activity}
                     </span>
                     <span
-                        className={`category ${selectedCategory === 'Stream' ? 'active' : ''}`}
-                        onClick={() => handleCategoryClick('Stream')}
+                        className={`category ${selectedCategory === 'Announce' ? 'active' : ''}`}
+                        onClick={() => handleCategoryClick('Announce')}
                     >
                         {currentText.newsBody.category.announcement}
                     </span>

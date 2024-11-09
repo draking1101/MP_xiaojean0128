@@ -1,5 +1,4 @@
-import defaultImage from "@/assets/xiaojean/A.無分類/008-rainyDoll.png"  // 預設圖片 
-import xiaojeanJail from "@/assets/xiaojean/A.無分類/011-坐牢靜.png"  // News 1 封面
+// 周邊
 import richXiaoJean from "@/assets/xiaojean/A.無分類/010-揮金如土.png"  // 預設圖片
 import lineSitcker from '@/assets/xiaojean/B.周邊/007-Lline貼圖(去背).png' // Line貼圖
 import emoji from '@/assets/xiaojean/B.周邊/008-Lline表情符號(去背).png' // Line表情符號
@@ -9,13 +8,31 @@ import anniversary_2nd_crowdfunding_01 from '@/assets/xiaojean/B.周邊/003-二�
 import anniversary_2nd_crowdfunding_02 from '@/assets/xiaojean/B.周邊/004-二周年募資限定周邊_特殊悠遊卡and卡套.jpg' // 二周年募資限定周邊 - 特殊悠遊卡 & 卡套
 import anniversary_2nd_crowdfunding_03 from '@/assets/xiaojean/B.周邊/005-二周年回饋周邊_Q版立牌(多邊框+Logo).png' // 二周年募資限定周邊 - Q版立牌
 import ff43_01 from '@/assets/xiaojean/B.周邊/006-FF43周邊.jpg'  // FF43周邊
+// 網站資訊
 import packageJson from "../../package.json";
+
+// 變數
 const version = packageJson.version;
 
 export const WEB_DETAILS = {
     version: `Ver.${version}` // 網站版本
 }
 
+const newsDetails = {
+    category: {
+        1: 'All',
+        2: 'Activity',
+        3: 'Announce',
+    },
+    date: {
+        id0: '2024/10/27',
+        id1: '2024/11/7',
+    },
+    demoImage: {
+        id0: require('@/assets/xiaojean/A.無分類/011-坐牢靜.png'),
+        id1: require('@/assets/xiaojean/A.無分類/012-我才.png'),
+    }
+}
 export const TEXT = {
     en: {
         header: {
@@ -89,35 +106,53 @@ export const TEXT = {
                 content2: "discord community",
                 content3: ". Use my promo code 'xiaojean' for a 5% discount. I hope everyone can support them!",
             },
-            rankVideoTitle: 'Valorant Extraordinary Journey',
-            episodeTitle: 'Select episode',
-            episode1: 'Ep.1 - The opponents never give an ACE😭',
-            episode2: 'Ep.2 - Reyna 1v4 Clutch Situation in rank',
-            episode3: 'Ep.3 - Losing streak in Platinum ranked games😭',
-            episode4: 'Ep.4 - Encountered a cheater in ranked again?!',
-            episode5: 'Ep.5 - Facing multiple opponents in clutch situation with Reyna again!',
         },
         news: {
             newsBody: {
                 title: 'Latest News',
                 category: {
-                    all: 'All',
-                    activity: 'Activity',
-                    announcement: 'Announce',
+                    all: newsDetails.category[1],
+                    activity: newsDetails.category[2],
+                    announcement: newsDetails.category[3],
                 }
             }
             , newsItem: [
                 {
-                    id: "1",
-                    category: 'Stream',
-                    demoImage: xiaojeanJail,
-                    title: "About the Extraordinary Journey",
-                    description: "I've been working hard to rank up in the Extraordinary Journey but the time pressure is really intense...",
+                    id: "0",
+                    category: newsDetails.category[3],
+                    demoImage: newsDetails.demoImage.id0,
+                    title: "About Extended Streaming Hours",
+                    description: "I’ve been putting in a lot of effort to rank up in the Extraordinary Journey but due to time constraints...",
+                    date: newsDetails.date.id0,
                     content: "I’ve been putting in a lot of effort to rank up in the Extraordinary Journey but due to time constraints, the pressure is intense. If I can't achieve my goal by the end of Act 9, this series might come to the end ( I’ll still be ranking, just not as intensively).",
                     content2: "However, I'll continue to work hard on my youtube channel with stream highlights, shorts, covers, and similar content.",
                     content3: "So… if you haven’t watched the latest episode, go check it out! I need your support and love. Love you all!",
-                    date: "2024/10/27",
+                    journey: {
+                        rankVideoTitle: 'Extraordinary Journey',
+                        episodeTitle: 'Select episode',
+                        episode1: 'Ep.1 - The opponents never give an ACE😭',
+                        episode2: 'Ep.2 - Reyna 1v4 Clutch Situation in rank',
+                        episode3: 'Ep.3 - Losing streak in Platinum ranked games😭',
+                        episode4: 'Ep.4 - Encountered a cheater in ranked again?!',
+                        episode5: 'Ep.5 - Facing multiple opponents in clutch situation with Reyna again!',
+                        episode6: 'Ep.6 - Valorant is Basically a Horror Game 😱',
+                        episode7: 'Ep.7 - Hilarious Moves Encountered in Ranked 🤣',
+                    }
                 },
+                {
+                    id: "1",
+                    category: newsDetails.category[3],
+                    demoImage: newsDetails.demoImage.id1,
+                    title: "About the Recent Condition of My Throat",
+                    description: "After seeing the doctor, I've decided to let my throat rest and sing a bit less...",
+                    date: newsDetails.date.id1,
+                    content: "After seeing the doctor, I've decided to let my throat rest and sing a bit less.",
+                    content2: "If you want to hear some songs recently, feel free to subscribe to Yefeng!",
+                    content3: "He’ll be updating clips from the 520 and celebration song streams.",
+                    content4: "I’ll check the comments when I have time.",
+                    content5: "Feel free to leave your compliments or thoughts in the comments!",
+                    text: "Click Me to Song List",
+                }
             ]
         },
         merch: {
@@ -260,13 +295,6 @@ export const TEXT = {
                 content2: "dc群",
                 content3: "詢問，使用我的優惠碼 xiaojean還能打95折，希望大家支持他們一下",
             },
-            rankVideoTitle: '特戰超凡之旅',
-            episodeTitle: '選擇集數',
-            episode1: '第1集 - 對手永遠不給ACE😭',
-            episode2: '第2集 - 排位蕾娜1打4殘局！',
-            episode3: '第3集 - 白金場排位連輸心態爆炸😭',
-            episode4: '第4集 - 排位又遇外掛?!照樣1發拿下MVP😎',
-            episode5: '第5集 - 蕾娜再次一打多殘局',
         },
         news: {
             newsBody: {
@@ -279,16 +307,42 @@ export const TEXT = {
             }
             , newsItem: [
                 {
-                    id: "1",
-                    category: 'Stream',
-                    demoImage: xiaojeanJail,
-                    title: "關於超凡之旅與直播時間",
-                    description: "超凡之旅我很努力爬分了，但礙於時間問題壓力真的很大...",
+                    id: "0",
+                    category: newsDetails.category[3],
+                    demoImage: newsDetails.demoImage.id0,
+                    title: "關於直播加班時間",
+                    description: "近期因為超凡之旅爬得很坐牢，加上10月私下爬分時的設定沒調整好...",
+                    date: newsDetails.date.id0,
                     content: "近期因為超凡之旅爬得很坐牢，加上10月私下爬分時的設定沒調整好，以至於那段時間的素材都不能用很可惜，所以這系列結束前需要多花點時間在爬分(結束時會再另外做影片跟各位報告!)",
                     content2: "平日不太開假日則盡量開4小時的台，除非臨時有事或身體不適會再提前告知，上班時會減少出現在群組的時間(上班時間為平日早八晚五有1小時午休)",
                     content3: "下班後有機會出現在會員語音聊聊天，還有承諾各位加班倒數完前不會主動找聯動，將會把加班時間拿來陪大家聊天玩遊戲~",
-                    date: "2024/10/27",
+                    // 超凡之旅
+                    journey: {
+                        rankVideoTitle: '超凡之旅',
+                        episodeTitle: '選擇集數',
+                        episode1: '第1集 - 對手永遠不給ACE😭',
+                        episode2: '第2集 - 排位蕾娜1打4殘局！',
+                        episode3: '第3集 - 白金場排位連輸心態爆炸😭',
+                        episode4: '第4集 - 排位又遇外掛?!照樣1發拿下MVP😎',
+                        episode5: '第5集 - 蕾娜再次一打多殘局',
+                        episode6: '第6集 - 特戰英豪就是一款恐怖遊戲😱',
+                        episode7: '第7集 - 排位遇到的各種搞笑操作🤣',
+                    }
                 },
+                {
+                    id: "1",
+                    category: newsDetails.category[3],
+                    demoImage: newsDetails.demoImage.id1,
+                    title: "關於近期喉嚨狀態 ",
+                    description: "看了醫生後決定讓喉嚨休養少唱點歌近期想聽歌的可以去訂閱夜楓呦...",
+                    date: newsDetails.date.id1,
+                    content: "看了醫生後決定讓喉嚨休養少唱點歌",
+                    content2: "近期想聽歌的可以去訂閱夜楓呦",
+                    content3: "他會陸續更新520及過勾歌回的剪輯",
+                    content4: "而且留言我有空的話都會去看的",
+                    content5: "歡迎留言留下你的讚美或看法",
+                    text: "點我前往歌單",
+                }
             ]
         },
         merch: {

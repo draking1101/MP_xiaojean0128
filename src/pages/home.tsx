@@ -18,23 +18,6 @@ export const Home = () => {
     const introText = TEXT[language].about;
     const linkData = useLinkData();
 
-    // State to keep track of the current video URL
-    const [currentVideoUrl, setCurrentVideoUrl] = useState("https://www.youtube.com/embed/Q-wmmlCssRE?si=ATH1j_IjZe_283X-");
-
-    // List of episode URLs (you can add more)
-    const episodeList = [
-        { title: [currentText.episode1], url: "https://www.youtube.com/embed/Q-wmmlCssRE?si=ATH1j_IjZe_283X-" },
-        { title: [currentText.episode2], url: "https://www.youtube.com/embed/OIBhgtH8SHQ?si=6RcqicnE8G5cdc-p" },
-        { title: [currentText.episode3], url: "https://www.youtube.com/embed/ipKDyPPL_W8?si=T-HWtm0M_7ow_Bfi" },
-        { title: [currentText.episode4], url: "https://www.youtube.com/embed/QXXlgIZg4tQ?si=D6ifXPp6fJAgLJo0" },
-        { title: [currentText.episode5], url: "https://www.youtube.com/embed/V2DIcU2ev0Q?si=HgZALOW0Zczri9RW" },
-    ];
-
-    // Function to handle episode click
-    const handleEpisodeClick = (url: string) => {
-        setCurrentVideoUrl(url);
-    };
-
     return (
         <div className='page-body'>
             <div style={styles.home} >
