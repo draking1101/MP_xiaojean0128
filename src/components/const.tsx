@@ -127,17 +127,7 @@ export const TEXT = {
                     content: "I’ve been putting in a lot of effort to rank up in the Extraordinary Journey but due to time constraints, the pressure is intense. If I can't achieve my goal by the end of Act 9, this series might come to the end ( I’ll still be ranking, just not as intensively).",
                     content2: "However, I'll continue to work hard on my youtube channel with stream highlights, shorts, covers, and similar content.",
                     content3: "So… if you haven’t watched the latest episode, go check it out! I need your support and love. Love you all!",
-                    journey: {
-                        rankVideoTitle: 'Extraordinary Journey',
-                        episodeTitle: 'Select episode',
-                        episode1: 'Ep.1 - The opponents never give an ACE😭',
-                        episode2: 'Ep.2 - Reyna 1v4 Clutch Situation in rank',
-                        episode3: 'Ep.3 - Losing streak in Platinum ranked games😭',
-                        episode4: 'Ep.4 - Encountered a cheater in ranked again?!',
-                        episode5: 'Ep.5 - Facing multiple opponents in clutch situation with Reyna again!',
-                        episode6: 'Ep.6 - Valorant is Basically a Horror Game 😱',
-                        episode7: 'Ep.7 - Hilarious Moves Encountered in Ranked 🤣',
-                    }
+                    linkText: "Click Me to Extraordinary Journey",
                 },
                 {
                     id: "1",
@@ -151,7 +141,7 @@ export const TEXT = {
                     content3: "He’ll be updating clips from the 520 and celebration song streams.",
                     content4: "I’ll check the comments when I have time.",
                     content5: "Feel free to leave your compliments or thoughts in the comments!",
-                    text: "Click Me to Song List",
+                    linkText: "Click Me to Song List",
                 }
             ]
         },
@@ -316,18 +306,7 @@ export const TEXT = {
                     content: "近期因為超凡之旅爬得很坐牢，加上10月私下爬分時的設定沒調整好，以至於那段時間的素材都不能用很可惜，所以這系列結束前需要多花點時間在爬分(結束時會再另外做影片跟各位報告!)",
                     content2: "平日不太開假日則盡量開4小時的台，除非臨時有事或身體不適會再提前告知，上班時會減少出現在群組的時間(上班時間為平日早八晚五有1小時午休)",
                     content3: "下班後有機會出現在會員語音聊聊天，還有承諾各位加班倒數完前不會主動找聯動，將會把加班時間拿來陪大家聊天玩遊戲~",
-                    // 超凡之旅
-                    journey: {
-                        rankVideoTitle: '超凡之旅',
-                        episodeTitle: '選擇集數',
-                        episode1: '第1集 - 對手永遠不給ACE😭',
-                        episode2: '第2集 - 排位蕾娜1打4殘局！',
-                        episode3: '第3集 - 白金場排位連輸心態爆炸😭',
-                        episode4: '第4集 - 排位又遇外掛?!照樣1發拿下MVP😎',
-                        episode5: '第5集 - 蕾娜再次一打多殘局',
-                        episode6: '第6集 - 特戰英豪就是一款恐怖遊戲😱',
-                        episode7: '第7集 - 排位遇到的各種搞笑操作🤣',
-                    }
+                    linkText: "點我前往超凡之旅",
                 },
                 {
                     id: "1",
@@ -341,7 +320,7 @@ export const TEXT = {
                     content3: "他會陸續更新520及過勾歌回的剪輯",
                     content4: "而且留言我有空的話都會去看的",
                     content5: "歡迎留言留下你的讚美或看法",
-                    text: "點我前往歌單",
+                    linkText: "點我前往歌單",
                 }
             ]
         },
