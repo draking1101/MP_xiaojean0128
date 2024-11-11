@@ -47,7 +47,7 @@ export const TEXT = {
         },
         home: {
             banner: {
-                bannerTitle1: "Hi! I'm Xiaojean Shizuka ～",
+                bannerTitle1: "Hi! I'm XiaoJean ～",
                 bannerTitle2: "I loves drawing, singing, and gaming.",
                 bannerTitle3: "My simple wish is to bring you lots of happiness.",
                 bannerTitle4: "Feel free to scroll down to learn more about me ♡",
@@ -189,8 +189,8 @@ export const TEXT = {
                 favoriteFood: 'Favorite Food: Curry',
                 hobby: 'Hobbies: Singing, drawing, gaming',
                 favoriteGame: 'Games: Mainly Valorant, occasionally trying other games',
-                notice1: 'Currently working a full-time job, not a full-time VTuber',
-                notice2: 'Please don’t fall for me; I only show favoritism towards girls',
+                notice1: 'Currently working a full-time job, not a full-time VTuber.',
+                notice2: 'Please don’t fall for me; I only show favoritism towards girls.',
                 notice3: '💌 xiaojean0128@gmail.com',
             },
             milestone: {
