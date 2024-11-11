@@ -24,38 +24,38 @@ export const Home = () => {
                 <div className='home-banner'>
                     <ReactTyped
                         strings={[currentText.banner.bannerTitle1]}
-                        typeSpeed={40}
+                        typeSpeed={language === "zh" ? 40 : 40}
                         showCursor={false}
                         startDelay={0} // 文字出現的延遲
                     />
                     <br />
                     <ReactTyped
                         strings={[currentText.banner.bannerTitle2]}
-                        typeSpeed={40}
+                        typeSpeed={language === "zh" ? 40 : 30}
                         showCursor={false}
-                        startDelay={1500}
+                        startDelay={language === "zh" ? 1000 : 1700}
                     />
                     <br />
                     <ReactTyped
                         strings={[currentText.banner.bannerTitle3]}
-                        typeSpeed={40}
+                        typeSpeed={language === "zh" ? 40 : 30}
                         showCursor={false}
-                        startDelay={2500}
+                        startDelay={language === "zh" ? 2200 : 3700}
                     />
                     <br />
                     <ReactTyped
                         strings={[currentText.banner.bannerTitle4]}
-                        typeSpeed={40}
+                        typeSpeed={language === "zh" ? 40 : 30}
                         showCursor={false}
-                        startDelay={3500}
+                        startDelay={language === "zh" ? 3200 : 6400}
                     />
                     <br />
                     <a className='home-followButton' href='https://www.youtube.com/watch?v=-34xIBbxBn8'>
                         <ReactTyped
                             strings={[currentText.banner.buttonText]}
-                            typeSpeed={40}
+                            typeSpeed={language === "zh" ? 40 : 30}
                             showCursor={false}
-                            startDelay={4500}
+                            startDelay={language === "zh" ? 4300 : 9300}
                         />
                     </a>
                 </div>

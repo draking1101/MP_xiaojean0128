@@ -47,11 +47,11 @@ export const TEXT = {
         },
         home: {
             banner: {
-                bannerTitle1: 'Welcome to XiaoJean Gang ♡',
-                bannerTitle2: "I love games, drawing, and singing ♡",
-                bannerTitle3: "My simple wish is to",
-                bannerTitle4: 'bring joy to you during stream ♡',
-                buttonText: '《Go to Virtual skin Debut》',
+                bannerTitle1: "Hi! I'm Xiaojean Shizuka ～",
+                bannerTitle2: "I loves drawing, singing, and gaming.",
+                bannerTitle3: "My simple wish is to bring you lots of happiness.",
+                bannerTitle4: "Feel free to scroll down to learn more about me ♡",
+                buttonText: "《Go to Virtual Debut Stream》",
             },
             section1: {
                 linkItem: {
@@ -96,7 +96,7 @@ export const TEXT = {
                 donate: "Donate",
                 item1: "If you’d like to support me, feel free to donate!",
                 item2: "But please make sure you’ve eaten and donate within your means.",
-                item3: "List of Past Donation Gifts",
+                item3: "List of Past Donation Gifts.",
                 Link1: "【Greenworld】",
                 Link2: "【O’Pay】",
                 Link3: "【PAYPAL】",
@@ -191,7 +191,7 @@ export const TEXT = {
                 favoriteGame: 'Games: Mainly Valorant, occasionally trying other games',
                 notice1: 'Currently working a full-time job, not a full-time VTuber',
                 notice2: 'Please don’t fall for me; I only show favoritism towards girls',
-                notice3: 'Collab invites 💌: xiaojean0128@gmail.com',
+                notice3: '💌 xiaojean0128@gmail.com',
             },
             milestone: {
                 1: "2022.09.13 Started Streaming ✓",
@@ -226,10 +226,10 @@ export const TEXT = {
         },
         home: {
             banner: {
-                bannerTitle1: "歡迎加入心結幫 ♡",
-                bannerTitle2: "我喜歡玩遊戲、畫畫、唱歌 ♡",
-                bannerTitle3: "簡單的心願就是",
-                bannerTitle4: '希望直播時讓你們感到快樂 ♡',
+                bannerTitle1: "嗨嗨！我是小靜しずか ～",
+                bannerTitle2: "一個愛畫畫.唱歌.玩遊戲的普通人",
+                bannerTitle3: "簡單的心願是想帶給你們許多快樂",
+                bannerTitle4: '歡迎下滑了解更多關於我的事 ♡',
                 buttonText: '《前往觀看V皮初配信》',
             },
             section1: {
@@ -365,12 +365,12 @@ export const TEXT = {
                 category: "基本資料",
                 height: '身高：158',
                 birthday: '生日：1/28',
-                favoriteFood: '食物：咖哩',
+                favoriteFood: '最愛的食物：咖哩',
                 hobby: '興趣：唱歌畫畫遊戲',
                 favoriteGame: '遊戲：特戰為主，偶爾嘗試其他遊戲',
                 notice1: '目前有正職，為非全職套皮實況主',
                 notice2: '請勿暈船，我只對妹子有差別待遇',
-                notice3: '聯動邀約💌：xiaojean0128@gmail.com',
+                notice3: '💌 xiaojean0128@gmail.com',
             },
             milestone: {
                 1: "2022.09.13 開始實況✓",
