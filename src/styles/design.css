@@ -1,0 +1,57 @@
+.design-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.design-section {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 30px;
+    width: 1024px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* 二創 */
+.rule-list {
+    margin-top: 30px;
+}
+
+.title {
+    font-size: var(--h1-font-size);
+    text-align: center;
+    color: #ffd3e4;
+    padding-bottom: 20px;
+    width: 70%;
+    border-bottom: 3px solid #ffd3e4;
+}
+
+.rule-list li {
+    font-size: var(--p-font-size);
+    color: #D4EDFF;
+    line-height: 2;
+}
+
+/* Design section */
+.design-Container p {
+    text-align: center;
+    color: #D4EDFF;
+    font-size: var(--h1-font-size);
+    font-weight: bold;
+}
+
+.design-image {
+    height: 500px;
+}
+
+@media screen and (max-width:1024px) {
+    .design-section {
+        width: 90%;
+    }
+}

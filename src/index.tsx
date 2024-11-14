@@ -13,7 +13,7 @@ import { Home } from '@/pages/home';
 import { News } from '@/pages/news';
 import { Merch } from '@/pages/merch';
 import { Commission } from '@/pages/commission';
-import { Live2D } from './pages/live2d';
+import { Design } from './pages/design';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -42,7 +42,7 @@ root.render(
             <Route path="/" element={<Home />} />
             <Route path="/news" element={<News />} />
             <Route path="/merch" element={<Merch />} />
-            <Route path="/live2d" element={<Live2D />} />
+            <Route path="/design" element={<Design />} />
             <Route path="/commission" element={<Commission />} />
           </Routes>
           <Footer />

@@ -104,7 +104,7 @@ export const Header = () => {
                         <Link to="/merch" className='nav-link'>{currentText.merch}</Link>
                     </li>
                     <li onClick={scrollTopAfterNav}>
-                        <Link to="/live2D" className='nav-link'>{currentText.live2D}</Link>
+                        <Link to="/design" className='nav-link'>{currentText.design}</Link>
                     </li>
                     <li onClick={scrollTopAfterNav}>
                         <Link to="/commission" className='nav-link'>{currentText.commission}</Link>

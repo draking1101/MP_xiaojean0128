@@ -42,7 +42,7 @@ export const TEXT = {
             merch: 'Merch',
             about: 'About',
             rule: 'Rules',
-            live2D: "Design",
+            design: "Design",
             commission: "Commission",
         },
         home: {
@@ -57,27 +57,27 @@ export const TEXT = {
                 linkItem: {
                     twitch: {
                         title: 'Twitch',
-                        subtitle: 'Regular streams and live event updates',
+                        subtitle: 'Regular Streams, Event Stories',
                     },
                     youtube: {
                         title: 'YouTube',
-                        subtitle: 'Live streams, highlights, covers, and shorts',
+                        subtitle: 'Live Videos, Song Covers',
                     },
                     twitter: {
                         title: 'Twitter',
-                        subtitle: 'Event announcements and appreciation posts',
-                    },
-                    instagram: {
-                        title: 'Instagram',
-                        subtitle: 'Event posts, daily stories, and reels',
+                        subtitle: 'Thank You Posts, Daily Updates',
                     },
                     threads: {
                         title: 'Threads',
-                        subtitle: 'Thoughts and casual posts',
+                        subtitle: 'Thoughts, Casual Posts',
+                    },
+                    instagram: {
+                        title: 'Instagram',
+                        subtitle: 'Highlight Clips, Daily Stories',
                     },
                     facebook: {
                         title: 'Facebook',
-                        subtitle: 'Event posts and artwork',
+                        subtitle: 'Event Posts, Artwork',
                     },
                     discord: {
                         title: 'Discord',
@@ -209,6 +209,18 @@ export const TEXT = {
                 3: "• No R18 content; R16 borderline content is acceptable.",
             },
         },
+        design: {
+            derivativeWork: {
+                title: 'Fan Art & Commission Rules',
+                item1: 'Any character illustrations can be used for commissions or fan art.',
+                item2: 'Use of images for profit or feeding into AI is prohibited.',
+                item3: 'No R18 content; borderline R16 content is acceptable.',
+            },
+            historyDesign: {
+                title: 'Character Design Showcase',
+                item1: 'Version 0.0',
+            },
+        },
         footer: {
             text: `This website was designed by Xiaotian ${WEB_DETAILS.version} ・ Powered by React @ 2024`,
         }
@@ -221,7 +233,7 @@ export const TEXT = {
             merch: '周邊',
             about: '關於我',
             rule: '粉絲守則',
-            live2D: "形象展示",
+            design: "形象展示",
             commission: "委託相關",
         },
         home: {
@@ -236,23 +248,23 @@ export const TEXT = {
                 linkItem: {
                     twitch: {
                         title: 'Twitch',
-                        subtitle: '常駐直播、直播活動限動',
+                        subtitle: '常駐直播、活動限動',
                     },
                     youtube: {
                         title: 'Youtube',
-                        subtitle: '直播、精華、翻唱、短片',
+                        subtitle: '直播影片、歌曲翻唱',
                     },
                     twitter: {
                         title: 'Twitter',
-                        subtitle: '活動貼文、感謝貼文',
-                    },
-                    instagram: {
-                        title: 'Instagram',
-                        subtitle: '活動貼文、日常限動、短片',
+                        subtitle: '感謝貼文、日常貼文',
                     },
                     threads: {
                         title: 'Threads',
                         subtitle: '想說的話、日常廢文',
+                    },
+                    instagram: {
+                        title: 'Instagram',
+                        subtitle: '精華短片、日常限動',
                     },
                     facebook: {
                         title: 'Facebook',
@@ -386,6 +398,18 @@ export const TEXT = {
                 1: "可使用任何形象立繪委託或二創",
                 2: "禁止將圖拿來盈利或投餵AI使用",
                 3: "禁止R18創作，R16擦邊圖可接受",
+            },
+        },
+        design: {
+            derivativeWork: {
+                title: '二創委託規則',
+                item1: '可使用任何形象立繪委託或二創',
+                item2: '禁止將圖拿來盈利或投餵AI使用',
+                item3: '禁止R18創作，R16擦邊圖可接受',
+            },
+            historyDesign: {
+                title: '歷代立繪展示',
+                item1: '0.0版'
             },
         },
         footer: {

@@ -34,7 +34,7 @@
     }
 }
 
-@media (max-width: 330px) {
+@media (max-width: 360px) {
     .switch-language-button {
         width: 60px;
     }
