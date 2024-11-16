@@ -1,13 +1,3 @@
-// 周邊
-import richXiaoJean from "@/assets/xiaojean/A.無分類/010-揮金如土.png"  // 預設圖片
-import lineSitcker from '@/assets/xiaojean/B.周邊/007-Lline貼圖(去背).png' // Line貼圖
-import emoji from '@/assets/xiaojean/B.周邊/008-Lline表情符號(去背).png' // Line表情符號
-import anniversary_1st from '@/assets/xiaojean/B.周邊/001-一周年周邊套組.png' // 一周年周邊套組
-import thousandSub from '@/assets/xiaojean/B.周邊/002-千訂回饋周邊.png' // 千訂回饋周邊
-import anniversary_2nd_crowdfunding_01 from '@/assets/xiaojean/B.周邊/003-二周年募資限定周邊_吊飾and飯友.jpg' // 二周年募資限定周邊 - 吊飾 & 飯友
-import anniversary_2nd_crowdfunding_02 from '@/assets/xiaojean/B.周邊/004-二周年募資限定周邊_特殊悠遊卡and卡套.jpg' // 二周年募資限定周邊 - 特殊悠遊卡 & 卡套
-import anniversary_2nd_crowdfunding_03 from '@/assets/xiaojean/B.周邊/005-二周年回饋周邊_Q版立牌(多邊框+Logo).png' // 二周年募資限定周邊 - Q版立牌
-import ff43_01 from '@/assets/xiaojean/B.周邊/006-FF43周邊.jpg'  // FF43周邊
 // 網站資訊
 import packageJson from "../../package.json";
 
@@ -16,6 +6,24 @@ const version = packageJson.version;
 
 export const WEB_DETAILS = {
     version: `Ver.${version}` // 網站版本
+}
+
+export const images = {
+    merch: {
+        default: require('@/assets/xiaojean/A.無分類/010-揮金如土.png'),
+        limit: {
+        },
+        regular: {
+            lineSitcker: require('@/assets/xiaojean/B.周邊/007-Lline貼圖(去背).png'),
+            lineEmoji: require('@/assets/xiaojean/B.周邊/008-Lline表情符號(去背).png'),
+        },
+        discontinued: {
+            thousandSub: require('@/assets/xiaojean/B.周邊/002-千訂回饋周邊_B.png'),
+            ff43: require('@/assets/xiaojean/B.周邊/006-FF43周邊_B.jpg'),
+            anniversary_1st: require('@/assets/xiaojean/B.周邊/001-一周年回饋_B.png'),
+            crowdfunding_designVersion_2: require('@/assets/xiaojean/B.周邊/003-2.0募資限定周邊.jpg'),
+        },
+    }
 }
 
 const newsDetails = {
@@ -150,17 +158,6 @@ export const TEXT = {
                 title1: "Limited",
                 title2: "Regular",
                 title3: "Discontinued",
-            },
-            img: {
-                default: richXiaoJean,
-                lineSitcker: lineSitcker,
-                lineEmoji: emoji,
-                thousandSub: thousandSub,
-                ff43_01: ff43_01,
-                anniversary_1st: anniversary_1st,
-                anniversary_2nd_crowdfunding_01: anniversary_2nd_crowdfunding_01,
-                anniversary_2nd_crowdfunding_02: anniversary_2nd_crowdfunding_02,
-                anniversary_2nd_crowdfunding_03: anniversary_2nd_crowdfunding_03,
             },
             title: {
                 commingSoon: '《Coming Soon》',
@@ -341,17 +338,6 @@ export const TEXT = {
                 title1: "限時周邊",
                 title2: "常駐周邊",
                 title3: "絕版周邊",
-            },
-            img: {
-                default: richXiaoJean,
-                lineSitcker: lineSitcker,
-                lineEmoji: emoji,
-                thousandSub: thousandSub,
-                ff43_01: ff43_01,
-                anniversary_1st: anniversary_1st,
-                anniversary_2nd_crowdfunding_01: anniversary_2nd_crowdfunding_01,
-                anniversary_2nd_crowdfunding_02: anniversary_2nd_crowdfunding_02,
-                anniversary_2nd_crowdfunding_03: anniversary_2nd_crowdfunding_03,
             },
             title: {
                 commingSoon: '敬請期待',
