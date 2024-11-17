@@ -18,11 +18,17 @@ export const images = {
             lineEmoji: require('@/assets/xiaojean/B.周邊/008-Lline表情符號(去背).png'),
         },
         discontinued: {
-            thousandSub: require('@/assets/xiaojean/B.周邊/002-千訂回饋周邊_B.png'),
-            ff43: require('@/assets/xiaojean/B.周邊/006-FF43周邊_B.jpg'),
-            anniversary_1st: require('@/assets/xiaojean/B.周邊/001-一周年回饋_B.png'),
+            thousandSub: require('@/assets/xiaojean/B.周邊/002-千訂回饋周邊.png'),
+            ff43: require('@/assets/xiaojean/B.周邊/006-FF43周邊.jpg'),
+            anniversary_1st: require('@/assets/xiaojean/B.周邊/001-一周年回饋.png'),
+            anniversary_2nd: require('@/assets/xiaojean/B.周邊/005-二周年回饋.png'),
             crowdfunding_designVersion_2: require('@/assets/xiaojean/B.周邊/003-2.0募資限定周邊.jpg'),
         },
+    },
+    design: {
+        historyDesign: {
+            "0.0": require('@/assets/xiaojean/F.形象圖/A00.png'),
+        }
     }
 }
 
@@ -85,7 +91,7 @@ export const TEXT = {
                     },
                     facebook: {
                         title: 'Facebook',
-                        subtitle: 'Event Posts, Artwork',
+                        subtitle: 'Artwork, Event Posts',
                     },
                     discord: {
                         title: 'Discord',
@@ -164,11 +170,10 @@ export const TEXT = {
                 lineSticker: "Line Stickers",
                 lineEmoji: "Line Emojis",
                 thousandSub: '1K Subscribers',
-                ff43_01: 'FF43',
+                ff43: 'FF43',
                 anniversary_1st: '1st Anniversary',
-                anniversary_2nd_crowdfunding_01: '2.0 Crowdfunding',
-                anniversary_2nd_crowdfunding_02: '2.0 Crowdfunding',
-                anniversary_2nd_crowdfunding_03: '2nd Anniversary',
+                anniversary_2nd: '2nd Anniversary',
+                anniversary_2nd_crowdfunding: '2.0 Crowdfunding',
             },
             link: {
                 commingSoon: '《Coming Soon》',
@@ -265,7 +270,7 @@ export const TEXT = {
                     },
                     facebook: {
                         title: 'Facebook',
-                        subtitle: '活動貼文、繪圖作品',
+                        subtitle: '繪圖作品、活動貼文',
                     },
                     discord: {
                         title: 'Discord',
@@ -344,11 +349,10 @@ export const TEXT = {
                 lineSticker: "小靜Line貼圖",
                 lineEmoji: "小靜Line表情符號",
                 thousandSub: '千訂回饋',
-                ff43_01: 'FF43',
-                anniversary_1st: '一週年套組',
-                anniversary_2nd_crowdfunding_01: '2.0募資限定',
-                anniversary_2nd_crowdfunding_02: '2.0募資限定',
-                anniversary_2nd_crowdfunding_03: '二週年立牌',
+                ff43: 'FF43',
+                anniversary_1st: '一週年回饋',
+                anniversary_2nd: '二週年回饋',
+                anniversary_2nd_crowdfunding: '2.0募資限定',
             },
             link: {
                 commingSoon: '《敬請期待》',

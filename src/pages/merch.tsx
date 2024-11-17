@@ -68,17 +68,22 @@ export const Merch = () => {
                             <p className="merch-item-title">{currentText.title.anniversary_1st}</p>
                         </li>
                         <li className='merch-item'>
+                            <img src={merch.discontinued.anniversary_2nd || defaultImg} alt="Lost" />
+                            <p className="merch-item-title">{currentText.title.anniversary_2nd}</p>
+                        </li>
+                        <li className='merch-item'>
                             <img src={merch.discontinued.thousandSub || defaultImg} alt="Lost" />
                             <p className="merch-item-title">{currentText.title.thousandSub}</p>
                         </li>
                         <li className='merch-item'>
                             <img src={merch.discontinued.crowdfunding_designVersion_2 || defaultImg} alt="Lost" />
-                            <p className="merch-item-title">{currentText.title.anniversary_2nd_crowdfunding_01}</p>
+                            <p className="merch-item-title">{currentText.title.anniversary_2nd_crowdfunding}</p>
                         </li>
                         <li className='merch-item'>
                             <img src={merch.discontinued.ff43 || defaultImg} alt="Lost" />
-                            <p className="merch-item-title">{currentText.title.ff43_01}</p>
+                            <p className="merch-item-title">{currentText.title.ff43}</p>
                         </li>
+
                         {/* <li className='merch-item'>
                             <img src={defaultImg} alt="Lost" />
                             <p className="merch-item-title">敬請期待</p>
