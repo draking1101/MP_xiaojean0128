@@ -79,7 +79,7 @@ export const TEXT = {
                     },
                     twitter: {
                         title: 'Twitter',
-                        subtitle: 'Thank You Posts, Daily Updates',
+                        subtitle: 'Thanks Post, Daily Post',
                     },
                     threads: {
                         title: 'Threads',
@@ -87,7 +87,7 @@ export const TEXT = {
                     },
                     instagram: {
                         title: 'Instagram',
-                        subtitle: 'Highlight Clips, Daily Stories',
+                        subtitle: 'Highlight Clips, Daily Post',
                     },
                     facebook: {
                         title: 'Facebook',
