@@ -8,6 +8,15 @@ export const WEB_DETAILS = {
     version: `Ver.${version}` // 網站版本
 }
 
+export const links = {
+    home: {
+        cheapServer: {
+            discord: 'https://discord.com/invite/cheapserver',
+            website: 'https://cheapserver.fun/xiaojean',
+        }
+    }
+}
+
 export const images = {
     merch: {
         default: require('@/assets/xiaojean/A.無分類/010-揮金如土.png'),
@@ -116,10 +125,15 @@ export const TEXT = {
                 Link3: "【PAYPAL】",
             },
             section3: {
-                content1: "This is the sponsor of our member Minecraft server. They’re my friends, and if anyone needs to rent a server for gaming, feel free to check them out! They offer different levels of servers to choose from, and if you have any questions, you can ask in their",
-                content2: "discord community",
-                content3: ". Use my promo code 'xiaojean' for a 5% discount. I hope everyone can support them!",
+                linkText: "Discord Group",
+                line1: "This is the sponsor for our member-exclusive Minecraft server.",
+                line2: "If you need to rent a server, feel free to check them out.",
+                line3A: `If you have any questions, you can ask in their`,
+                line3B: '.',
+                line4: "Use my discount code 'xiaojean' to get 5% off!",
+                line5: 'Read More',
             },
+
         },
         news: {
             newsBody: {
@@ -295,9 +309,13 @@ export const TEXT = {
                 Link3: "【PAYPAL】",
             },
             section3: {
-                content1: "這是我們會員麥塊伺服器的贊助商，他們是我的朋友，如果大家有需要租伺服器遊玩的話不妨去參考看看，有不同等級主機可以選擇，有問題也可以在他們的",
-                content2: "dc群",
-                content3: "詢問，使用我的優惠碼 xiaojean還能打95折，希望大家支持他們一下",
+                linkText: "DC群",
+                line1: '這是我們會員麥塊伺服器的贊助商',
+                line2: '如果有需要租伺服器的話可以參考看看',
+                line3A: `有問題也可以在他們的`,
+                line3B: `詢問`,
+                line4: '使用我的優惠碼 xiaojean 還能打95折喔!',
+                line5: '了解更多',
             },
         },
         news: {

@@ -7,7 +7,7 @@ import tear from "@/assets/xiaojean/F.形象圖/B02-粉絲形象-放大版.png"
 import '@/styles/home.css';  // 導入CSS
 // Components
 import { ReactTyped } from 'react-typed';
-import { TEXT } from '@/components/const';
+import { links, TEXT } from '@/components/const';
 import { useLanguage } from '@/components/LanguageContext';
 import { useLinkData } from '@/components/home/link_data';
 import { LinkItem } from '@/components/home/link_item';
@@ -133,15 +133,25 @@ export const Home = () => {
                     </ul>
                 </section>
                 {/* Minecraft Server */}
-                <section id='header-cheap-server' style={{ flexDirection: 'column', padding: '30px 0' }}>
+                <section id='header-cheap-server' style={{ flexDirection: 'column', padding: '30px 0', listStyle: 'none', }}>
                     <img src={minecraftServer} alt="Lost" />
-                    <div>
+                    <div style={{ ...styles.center, textAlign: 'center' }}>
                         <p>
-                            {currentText.section3.content1}
-                            <a href="https://discord.com/invite/cheapserver" target="_blank" rel="noreferrer">
-                                {currentText.section3.content2}
-                            </a>
-                            {currentText.section3.content3}🥰
+                            <li>{currentText.section3.line1}</li>
+                            <li>{currentText.section3.line2}</li>
+                            <li>
+                                {currentText.section3.line3A}
+                                <a href={links.home.cheapServer.discord} target="_blank" rel="noreferrer">
+                                    {currentText.section3.linkText}
+                                </a>
+                                {currentText.section3.line3B}
+                            </li>
+                            <li>{currentText.section3.line4}</li>
+                            <li>
+                                <a href={links.home.cheapServer.website} target="_blank" rel="noreferrer" >
+                                    <b style={{ ...styles.center, fontSize: '18px' }}>{currentText.section3.line5}</b>
+                                </a>
+                            </li>
                         </p>
                     </div>
                 </section>
@@ -222,4 +232,8 @@ export const styles: { [key: string]: React.CSSProperties } = {
     section1LinkItemContentSubtitle: {
         color: '#D4EDFF',
     },
+    center: {
+        display: 'flex',
+        justifyContent: 'center',
+    }
 };

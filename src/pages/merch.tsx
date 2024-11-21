@@ -20,8 +20,7 @@ export const Merch = () => {
                         <li className='merch-item'>
                             <img src={defaultImg} alt="Lost" />
                             <p className="merch-item-title">{currentText.title.commingSoon}</p>
-                            <p className="merch-item-text"></p>
-                            <a className='merch-item-link' target="_blank" rel="noreferrer"><p>{currentText.link.commingSoon}</p></a>
+                            <a href=' ' className='merch-item-link' target="_blank" rel="noreferrer"><p>{currentText.link.commingSoon}</p></a>
                         </li>
                         {/* <li className='merch-item'>
                             <img src={defaultImg} alt="Lost" />
@@ -38,7 +37,6 @@ export const Merch = () => {
                         <li className='merch-item'>
                             <img src={merch.regular.lineSitcker || defaultImg} alt="Lost" />
                             <p className="merch-item-title">{currentText.title.lineSticker}</p>
-                            <p className="merch-item-text"></p>
                             <a className='merch-item-link' href={currentText.link.lineSitcker} target="_blank" rel="noreferrer">
                                 {currentText.link.default}
                             </a>
@@ -46,7 +44,6 @@ export const Merch = () => {
                         <li className='merch-item'>
                             <img src={merch.regular.lineEmoji || defaultImg} alt="Lost" />
                             <p className="merch-item-title">{currentText.title.lineEmoji}</p>
-                            <p className="merch-item-text"></p>
                             <a className='merch-item-link' href={currentText.link.lineEmoji} target="_blank" rel="noreferrer">
                                 {currentText.link.default}
                             </a>
