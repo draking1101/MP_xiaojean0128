@@ -1,7 +1,7 @@
 // Styles
 import '@/styles/merch.css';
 // Components
-import { images, TEXT } from '@/components/const';
+import { images, links, TEXT } from '@/components/const';
 import { useLanguage } from '@/components/LanguageContext';
 
 export const Merch = () => {
@@ -17,16 +17,30 @@ export const Merch = () => {
                     {/* 限時周邊 */}
                     <h1 className='merch-area-title'>{currentText.category.title1}</h1>
                     <ul className='merch-item-container'>
-                        <li className='merch-item'>
+                        {/* <li className='merch-item'>
                             <img src={defaultImg} alt="Lost" />
                             <p className="merch-item-title">{currentText.title.commingSoon}</p>
                             <a href=' ' className='merch-item-link' target="_blank" rel="noreferrer"><p>{currentText.link.commingSoon}</p></a>
+                        </li> */}
+                        <li className='merch-item'>
+                            <img src={merch.birthday2025 || defaultImg} alt="Lost" />
+                            <p className="merch-item-title">{currentText.title.birthday2025}</p>
+                            {/* <a className='merch-item-link' href='' target="_blank" rel="noreferrer"><p>{currentText.link.default}</p></a> */}
+                        </li>
+                        <li className='merch-item'>
+                            <img src={merch.co_branding_Tshirt_black || defaultImg} alt="Lost" />
+                            <p className="merch-item-title">{currentText.title.co_branded_Tshirt.A}</p>
+                            <a className='merch-item-link' href={links.merch.co_branding_Tshirt.birthday2025_short} target="_blank" rel="noreferrer"><p>{currentText.link.default}</p></a>
+                        </li>
+                        <li className='merch-item'>
+                            <img src={merch.co_branding_Tshirt_white || defaultImg} alt="Lost" />
+                            <p className="merch-item-title">{currentText.title.co_branded_Tshirt.B}</p>
+                            <a className='merch-item-link' href={links.merch.co_branding_Tshirt.birthday2025_long} target="_blank" rel="noreferrer"><p>{currentText.link.default}</p></a>
                         </li>
                         {/* <li className='merch-item'>
-                            <img src={defaultImg} alt="Lost" />
-                            <p className="merch-item-title">敬請期待</p>
-                            <p className="merch-item-text"></p>
-                            <a className='merch-item-link' href="/#" target="_blank"  rel="noreferrer"><p>《敬請期待》</p></a>
+                            <img src={merch || defaultImg} alt="Lost" />
+                            <p className="merch-item-title">{currentText.title.birthday2025}</p>
+                            <a className='merch-item-link' href={links.merch.co_branding_Tshirt.birthday2025} target="_blank"  rel="noreferrer"><p>{currentText.link.commingSoon}</p></a>
                         </li> */}
                     </ul>
                 </div>

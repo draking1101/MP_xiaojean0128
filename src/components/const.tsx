@@ -14,14 +14,18 @@ export const links = {
             discord: 'https://discord.com/invite/cheapserver',
             website: 'https://cheapserver.fun/xiaojean',
         }
+    },
+    merch: {
+        co_branding_Tshirt: {
+            birthday2025_short: 'https://www.50off.tw/pitem/M00062029',
+            birthday2025_long: 'https://www.50off.tw/pitem/M00062028',
+        },
     }
 }
 
 export const images = {
     merch: {
         default: require('@/assets/xiaojean/A.無分類/010-揮金如土.png'),
-        limit: {
-        },
         regular: {
             lineSitcker: require('@/assets/xiaojean/B.周邊/007-Lline貼圖(去背).png'),
             lineEmoji: require('@/assets/xiaojean/B.周邊/008-Lline表情符號(去背).png'),
@@ -33,6 +37,9 @@ export const images = {
             anniversary_2nd: require('@/assets/xiaojean/B.周邊/005-二周年回饋.png'),
             crowdfunding_designVersion_2: require('@/assets/xiaojean/B.周邊/003-2.0募資限定周邊.jpg'),
         },
+        birthday2025: require('@/assets/xiaojean/B.周邊/birthday/birthday2025.png'),
+        co_branding_Tshirt_black: require('@/assets/xiaojean/B.周邊/co-branded/co_branding_Tshirt_black.png'),
+        co_branding_Tshirt_white: require('@/assets/xiaojean/B.周邊/co-branded/co_branding_Tshirt_white.png'),
     },
     design: {
         historyDesign: {
@@ -188,6 +195,11 @@ export const TEXT = {
                 anniversary_1st: '1st Anniversary',
                 anniversary_2nd: '2nd Anniversary',
                 anniversary_2nd_crowdfunding: '2.0 Crowdfunding',
+                birthday2025: '2025 Birthday',
+                co_branded_Tshirt: {
+                    A: '2025 XinJieT(Short)',
+                    B: '2025 XinJieT(Long)',
+                }
             },
             link: {
                 commingSoon: '《Coming Soon》',
@@ -371,6 +383,11 @@ export const TEXT = {
                 anniversary_1st: '一週年回饋',
                 anniversary_2nd: '二週年回饋',
                 anniversary_2nd_crowdfunding: '2.0募資限定',
+                birthday2025: '2025生日周邊',
+                co_branded_Tshirt: {
+                    A: '小靜心結T(短袖)',
+                    B: '小靜心結T(長袖)',
+                }
             },
             link: {
                 commingSoon: '《敬請期待》',
