@@ -117,12 +117,10 @@ export const Home = () => {
                                 target="_blank" rel="noreferrer">
                                 {currentText.section2.Link1}
                             </a>
-                            <a href="https://www.paypal.com/paypalme/XiaoJean?country.x=TW&locale.x=zh_TW" target="_blank" rel="noreferrer">
+                            <a href="https://payment.opay.tw/Broadcaster/Donate/658E154B04738822369BC4C46E432F3D" target="_blank" rel="noreferrer">
                                 {currentText.section2.Link2}
                             </a>
-                            <a href="https://payment.opay.tw/Broadcaster/Donate/658E154B04738822369BC4C46E432F3D" target="_blank" rel="noreferrer">
-                                {currentText.section2.Link3}
-                            </a>
+                            {/* Remove PayPal Because of security issues, refer to https://x.com/iluyee161/status/1883712399020335297?s=46 */}
                         </li>
                         <li>
                             <a href="https://docs.google.com/spreadsheets/d/1TjnjalZ_7pMc8rbbINDAwAyPbCDrVy49r3A2YDErcHI/edit?usp=sharing"
