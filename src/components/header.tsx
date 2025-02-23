@@ -40,7 +40,7 @@ export const Header = () => {
 
     // 開關漢堡選單
     function toggleMenu() {
-        if (window.innerWidth < 720) {
+        if (window.innerWidth < 1024) {
             const headerbody = document.getElementById("header-body")
             const navList = document.getElementById("nav-list")
             const links = document.querySelectorAll('.nav-link');

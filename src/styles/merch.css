@@ -72,6 +72,11 @@
     border-radius: 15px;
     background-color: #ffd3e4;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.merch-item button:active {
+    scale: 0.95;
 }
 
 /* Merch Item Content Styles */

@@ -4,7 +4,8 @@ export interface SwitchLanguageButtonProps {
 }
 
 export interface MerchItemProps {
-    category: 'limited' | 'regular' | 'discontinued';
+    id: number;
+    category: string;
     imgSrc: string;
     title: string;
     link?: string;
