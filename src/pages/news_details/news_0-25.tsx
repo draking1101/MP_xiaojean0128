@@ -1,5 +1,5 @@
 // Components
-import { ContentWrapper, H1, P, Ul, Li } from "@/pages/news_details/news_tempates";
+import { ContentWrapper, P } from "@/pages/news_details/news_tempates";
 
 export const News0 = ({ selectedNews }) => {
     return (

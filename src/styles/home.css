@@ -35,6 +35,14 @@
     align-items: center;
 }
 
+.home-section1LinkArea li {
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.home-section1LinkArea li:hover {
+    border: 2px solid #ffd3e4;
+}
 /* section1 */
 .home-section1IntroArea {
     width: 50%;
@@ -141,6 +149,21 @@
 #header-cheap-server p {
     font-size: 18px;
     color: #D4EDFF;
+}
+
+#cheap-server-link {
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+#cheap-server-link:hover {
+    border: 2px solid #ffd3e4;
+    scale: 1.05;
+    border-radius: 10px;
+}
+
+#cheap-server-link:active {
+    scale: 0.95;
 }
 
 /* 媒體查詢，用於螢幕寬度低於720px時 */

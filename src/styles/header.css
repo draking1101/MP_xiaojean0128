@@ -69,6 +69,16 @@
     padding: 0;
 }
 
+#nav-list li {
+    cursor: pointer;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+}
+
+#nav-list li:hover {
+    border-bottom: 2px solid #ffd3e4;
+}
+
 .nav-link {
     color: #ffd3e4;
     text-decoration: 'none';

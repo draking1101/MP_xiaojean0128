@@ -182,9 +182,9 @@ export const TEXT = {
         },
         merch: {
             category: {
-                title1: "Limited",
-                title2: "Regular",
-                title3: "Discontinued",
+                limited: "Limited",
+                regular: "Regular",
+                discontinued: "Discontinued",
             },
             title: {
                 commingSoon: '《Coming Soon》',
@@ -370,9 +370,9 @@ export const TEXT = {
         },
         merch: {
             category: {
-                title1: "限時周邊",
-                title2: "常駐周邊",
-                title3: "絕版周邊",
+                limited: "限時周邊",
+                regular: "常駐周邊",
+                discontinued: "絕版周邊",
             },
             title: {
                 commingSoon: '敬請期待',

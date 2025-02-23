@@ -145,9 +145,9 @@ export const Home = () => {
                                 {currentText.section3.line3B}
                             </li>
                             <li>{currentText.section3.line4}</li>
-                            <li>
+                            <li id='cheap-server-link'>
                                 <a href={links.home.cheapServer.website} target="_blank" rel="noreferrer" >
-                                    <b style={{ ...styles.center, fontSize: '18px' }}>{currentText.section3.line5}</b>
+                                    <b style={{ ...styles.center, fontSize: '18px', cursor: 'pointer' }}>{currentText.section3.line5}</b>
                                 </a>
                             </li>
                         </p>
@@ -201,7 +201,7 @@ export const styles: { [key: string]: React.CSSProperties } = {
         display: 'flex',
         alignItems: 'center',
         backgroundColor: 'rgba(0,0,0,0.6)',
-        width: '100%',
+        width: '99%',
         height: 'auto',
         marginBottom: '8px',
         borderRadius: '10px',
