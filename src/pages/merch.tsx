@@ -46,14 +46,16 @@ export const Merch = () => {
         category: currentText.category.regular,
         showLink: true,
         imgSrc: merch.regular.lineSitcker,
-        title: currentText.title.lineSticker
+        title: currentText.title.lineSticker,
+        link: currentText.link.lineSitcker
     }, {
         // Line表情符號
         id: 7,
         category: currentText.category.regular,
         showLink: true,
         imgSrc: merch.regular.lineEmoji,
-        title: currentText.title.lineEmoji
+        title: currentText.title.lineEmoji,
+        link: currentText.link.lineEmoji
     }, {
         // 一周年回饋
         id: 1,
@@ -118,6 +120,7 @@ export const Merch = () => {
                                 showLink={item.showLink}
                                 imgSrc={item.imgSrc}
                                 title={item.title}
+                                link={item.link}
                             />
                         ))}
                     {/* 如果限定類別沒商品，則顯示Coming Soon */}

@@ -8,7 +8,7 @@ export interface MerchItemProps {
     category: string;
     imgSrc: string;
     title: string;
-    link?: string;
+    link?: any;
     showLink: boolean;
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { FOOTER } from '@/styles/const';
-import { TEXT, WEB_DETAILS } from '@/components/const';
+import { TEXT } from '@/components/const';
 import { useLanguage } from '@/components/LanguageContext';
 
 export const Footer = () => {

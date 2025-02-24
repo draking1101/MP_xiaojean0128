@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 // Images
 import introImage from '@/assets/xiaojean/A.無分類/009-lieOnHeart.png'
 import minecraftServer from "@/assets/xiaojean/A.無分類/007-cheapsever.png" // 麥塊 Cheap Server 圖片
