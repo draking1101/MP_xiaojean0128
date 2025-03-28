@@ -20,6 +20,9 @@ export const links = {
             birthday2025_short: 'https://www.50off.tw/pitem/M00062029',
             birthday2025_long: 'https://www.50off.tw/pitem/M00062028',
         },
+        lineSitcker: 'https://store.line.me/stickershop/product/25838548/zh-Hant?utm_source=gnsh_stickerDetail',
+        lineSticer_2: "https://store.line.me/stickershop/product/30237154/zh-Hant?from=sticker",
+        lineEmoji: "https://store.line.me/emojishop/product/65d99d86357e3d15ccfcf4be/zh-Hant?lang=zh-Hant&utm_source=gnsh_sticonDetail",
     }
 }
 
@@ -28,15 +31,14 @@ export const images = {
         default: require('@/assets/xiaojean/A.無分類/010-揮金如土.png'),
         regular: {
             lineSitcker: require('@/assets/xiaojean/B.周邊/007-Lline貼圖(去背).png'),
+            lineSticker_2: require('@/assets/xiaojean/B.周邊/lineSticker_2.png'),
             lineEmoji: require('@/assets/xiaojean/B.周邊/008-Lline表情符號(去背).png'),
         },
-        discontinued: {
-            thousandSub: require('@/assets/xiaojean/B.周邊/002-千訂回饋周邊.png'),
-            ff43: require('@/assets/xiaojean/B.周邊/006-FF43周邊.jpg'),
-            anniversary_1st: require('@/assets/xiaojean/B.周邊/001-一周年回饋.png'),
-            anniversary_2nd: require('@/assets/xiaojean/B.周邊/005-二周年回饋.png'),
-            crowdfunding_designVersion_2: require('@/assets/xiaojean/B.周邊/003-2.0募資限定周邊.jpg'),
-        },
+        thousandSub: require('@/assets/xiaojean/B.周邊/002-千訂回饋周邊.png'),
+        ff43: require('@/assets/xiaojean/B.周邊/006-FF43周邊.jpg'),
+        anniversary_1st: require('@/assets/xiaojean/B.周邊/001-一周年回饋.png'),
+        anniversary_2nd: require('@/assets/xiaojean/B.周邊/005-二周年回饋.png'),
+        crowdfunding_designVersion_2: require('@/assets/xiaojean/B.周邊/003-2.0募資限定周邊.jpg'),
         birthday2025: require('@/assets/xiaojean/B.周邊/birthday/birthday2025.png'),
         co_branding_Tshirt_black: require('@/assets/xiaojean/B.周邊/co-branded/co_branding_Tshirt_black.png'),
         co_branding_Tshirt_white: require('@/assets/xiaojean/B.周邊/co-branded/co_branding_Tshirt_white.png'),
@@ -189,6 +191,7 @@ export const TEXT = {
             title: {
                 commingSoon: '《Coming Soon》',
                 lineSticker: "Line Stickers",
+                lineSticker_2: "Line Stickers 2.0",
                 lineEmoji: "Line Emojis",
                 thousandSub: '1K Subscribers',
                 ff43: 'FF43',
@@ -204,8 +207,7 @@ export const TEXT = {
             link: {
                 commingSoon: '《Coming Soon》',
                 default: '《See More Details》',
-                lineSitcker: 'https://store.line.me/stickershop/product/25838548/zh-Hant?utm_source=gnsh_stickerDetail',
-                lineEmoji: "https://store.line.me/emojishop/product/65d99d86357e3d15ccfcf4be/zh-Hant?lang=zh-Hant&utm_source=gnsh_sticonDetail",
+
             }
         },
         about: {
@@ -377,6 +379,7 @@ export const TEXT = {
             title: {
                 commingSoon: '敬請期待',
                 lineSticker: "小靜Line貼圖",
+                lineSticker_2: "小靜2.0Line貼圖",
                 lineEmoji: "小靜Line表情符號",
                 thousandSub: '千訂回饋',
                 ff43: 'FF43',
@@ -392,8 +395,6 @@ export const TEXT = {
             link: {
                 commingSoon: '《敬請期待》',
                 default: '《點擊前往》',
-                lineSitcker: 'https://store.line.me/stickershop/product/25838548/zh-Hant?utm_source=gnsh_stickerDetail',
-                lineEmoji: "https://store.line.me/emojishop/product/65d99d86357e3d15ccfcf4be/zh-Hant?lang=zh-Hant&utm_source=gnsh_sticonDetail",
             }
         },
         about: {

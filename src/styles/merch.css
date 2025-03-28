@@ -57,6 +57,7 @@
     height: 380px;
     padding: 15px 20px;
     margin: 20px 0;
+    border: 3px solid #ffd3e400;
     border-radius: 15px;
     background-color: rgba(148, 121, 70, 0.5);
     display: flex;
@@ -65,19 +66,10 @@
     text-align: center;
 }
 
-.merch-item button {
-    width: 60%;
-    height: 36px;
-    margin: 10px 0px;
-    border-radius: 15px;
-    background-color: #ffd3e4;
-    font-weight: bold;
-    cursor: pointer;
+.merch-item:hover {
+    border: 3px solid #ffd3e4;
 }
 
-.merch-item button:active {
-    scale: 0.95;
-}
 
 /* Merch Item Content Styles */
 .merch-area img {
@@ -117,28 +109,66 @@
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* 檢視圖片按鈕 */
+.merch-item button {
+    width: 60%;
+    height: 36px;
+    margin: 10px 0px;
+    border-radius: 15px;
+    background-color: #ffd3e4;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.merch-item button:active {
+    scale: 0.95;
+}
+
+.merch-item button:hover {
+    transform: translateY(-2px);
+    background-color: #ffbdd6;
+}
+
 .modal-content {
-    background-color: #fefefe;
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
     width: 100%;
     max-width: 600px;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .close {
-    color: #aaa;
+    color: #ffd3e4;
     float: right;
     font-size: 60px;
     font-weight: bold;
+    margin-top: 30px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ffd3e4;
+    border-radius: 50%;
 }
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: #D4EDFF;
+    border: 3px solid #D4EDFF;
     text-decoration: none;
     cursor: pointer;
+    transform: rotate(90deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.close:not(:hover) {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
 }
 
 /* Media Queries for Responsiveness */
@@ -151,5 +181,13 @@
 @media screen and (max-width: 768px) {
     .merch-title {
         font-size: var(--h1-font-size-768px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .close {
+        font-size: 40px;
+        width: 40px;
+        height: 40px;
     }
 }

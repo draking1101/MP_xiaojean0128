@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 // Styles
 import '@/styles/merch.css';
 // Components
-import { images, TEXT } from '@/components/const';
+import { images, links, TEXT } from '@/components/const';
 import { useLanguage } from '@/components/LanguageContext';
 // Interface
 import { MerchItemProps } from '@/components/interface';
@@ -20,6 +20,57 @@ export const Merch = () => {
     const merchCategory = [currentText.category.limited, currentText.category.regular, currentText.category.discontinued]
 
     const MerchItem = [{
+        // 一周年回饋
+        id: 1,
+        category: currentText.category.discontinued,
+        showLink: false,
+        imgSrc: merch.anniversary_1st,
+        title: currentText.title.anniversary_1st
+    }, {
+        // 千人訂閱
+        id: 2,
+        category: currentText.category.discontinued,
+        showLink: false,
+        imgSrc: merch.thousandSub,
+        title: currentText.title.thousandSub
+    }, {
+        // 二周年募資限定
+        id: 3,
+        category: currentText.category.discontinued,
+        showLink: false,
+        imgSrc: merch.crowdfunding_designVersion_2,
+        title: currentText.title.anniversary_2nd_crowdfunding
+    }, {
+        // 二周年
+        id: 4,
+        category: currentText.category.discontinued,
+        showLink: false,
+        imgSrc: merch.anniversary_2nd,
+        title: currentText.title.anniversary_2nd
+    }, {
+        // FF43
+        id: 5,
+        category: currentText.category.discontinued,
+        showLink: false,
+        imgSrc: merch.ff43,
+        title: currentText.title.ff43
+    }, {
+        // Line貼圖
+        id: 6,
+        category: currentText.category.regular,
+        showLink: true,
+        imgSrc: merch.regular.lineSitcker,
+        title: currentText.title.lineSticker,
+        link: links.merch.lineSitcker
+    }, {
+        // Line表情符號
+        id: 7,
+        category: currentText.category.regular,
+        showLink: true,
+        imgSrc: merch.regular.lineEmoji,
+        title: currentText.title.lineEmoji,
+        link: links.merch.lineEmoji
+    }, {
         // 2025生日周邊
         id: 8,
         category: currentText.category.discontinued,
@@ -41,56 +92,13 @@ export const Merch = () => {
         imgSrc: merch.co_branding_Tshirt_white,
         title: currentText.title.co_branded_Tshirt.B
     }, {
-        // Line貼圖
-        id: 6,
+        // Line小靜2.0
+        id: 11,
         category: currentText.category.regular,
         showLink: true,
-        imgSrc: merch.regular.lineSitcker,
-        title: currentText.title.lineSticker,
-        link: currentText.link.lineSitcker
-    }, {
-        // Line表情符號
-        id: 7,
-        category: currentText.category.regular,
-        showLink: true,
-        imgSrc: merch.regular.lineEmoji,
-        title: currentText.title.lineEmoji,
-        link: currentText.link.lineEmoji
-    }, {
-        // 一周年回饋
-        id: 1,
-        category: currentText.category.discontinued,
-        showLink: false,
-        imgSrc: merch.discontinued.anniversary_1st,
-        title: currentText.title.anniversary_1st
-    }, {
-        // 千人訂閱
-        id: 2,
-        category: currentText.category.discontinued,
-        showLink: false,
-        imgSrc: merch.discontinued.thousandSub,
-        title: currentText.title.thousandSub
-    }, {
-        // 二周年募資限定
-        id: 3,
-        category: currentText.category.discontinued,
-        showLink: false,
-        imgSrc: merch.discontinued.crowdfunding_designVersion_2,
-        title: currentText.title.anniversary_2nd_crowdfunding
-    }, {
-        // 二周年
-        id: 4,
-        category: currentText.category.discontinued,
-        showLink: false,
-        imgSrc: merch.discontinued.anniversary_2nd,
-        title: currentText.title.anniversary_2nd
-    }, {
-        // FF43
-        id: 5,
-        category: currentText.category.discontinued,
-        showLink: false,
-        imgSrc: merch.discontinued.ff43,
-        title: currentText.title.ff43
+        imgSrc: merch.regular.lineSticker_2,
+        title: currentText.title.lineSticker_2,
+        link: links.merch.lineSticer_2
     }]
 
     const openModal = (imageSrc) => {
@@ -168,8 +176,8 @@ export const Merch = () => {
             {isModalOpen && (
                 <div className="modal">
                     <div className="modal-content">
-                        <span className="close" onClick={closeModal}>&times;</span>
                         <img src={modalImage} alt="Modal View" style={{ width: '100%', height: '100%' }} />
+                        <span className="close" onClick={closeModal}>&times;</span>
                     </div>
                 </div>
             )}
