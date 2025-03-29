@@ -110,6 +110,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    min-height: 80vh;
 }
 
 .modal-controls {
@@ -119,14 +121,16 @@
     align-items: center;
     gap: 20px;
     margin-top: 30px;
+    position: absolute;
+    bottom: 20px;
 }
 
 .rotate-button {
+    color: #143753;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     background-color: #ffd3e4;
-    color: #333;
     font-weight: bold;
     border: 2px solid #ffd3e4;
     cursor: pointer;
@@ -164,6 +168,15 @@ button.close:focus {
     transition: transform 0.3s ease-in-out;
 }
 
+/* 调整图片容器样式 */
+.modal-content img {
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    margin-bottom: 80px;
+}
+
 @media screen and (max-width:1024px) {
     .design-section {
         width: 90%;
@@ -181,8 +194,8 @@ button.close:focus {
         width: 90%;
     }
 
-    .close {
-        font-size: 14px;
+    button.close {
+        font-size: 32px;
         width: 40px;
         height: 40px;
     }
@@ -191,5 +204,13 @@ button.close:focus {
         width: 40px;
         height: 40px;
         font-size: 14px;
+    }
+
+    .modal-controls {
+        bottom: 10px;
+    }
+    
+    .modal-content img {
+        margin-bottom: 60px;
     }
 }
