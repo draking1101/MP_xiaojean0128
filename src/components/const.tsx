@@ -46,6 +46,7 @@ export const images = {
     design: {
         historyDesign: {
             "0.0": require('@/assets/xiaojean/F.形象圖/A00.png'),
+            "1.0&2.0": require('@/assets/xiaojean/F.形象圖/1.0&2.0.jpg'),
         }
     }
 }
@@ -249,6 +250,7 @@ export const TEXT = {
             historyDesign: {
                 title: 'Character Design Showcase',
                 item1: 'Version 0.0',
+                item2: 'Version 1.0 & 2.0',
             },
         },
         footer: {
@@ -435,7 +437,8 @@ export const TEXT = {
             },
             historyDesign: {
                 title: '歷代立繪展示',
-                item1: '0.0版'
+                item1: '0.0版',
+                item2: '1.0 & 2.0版',
             },
         },
         footer: {
