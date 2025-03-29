@@ -111,7 +111,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    min-height: 80vh;
+    min-height: 70vh;
 }
 
 .modal-controls {
@@ -120,9 +120,8 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    margin-top: 30px;
     position: absolute;
-    bottom: 20px;
+    bottom: 5%;
 }
 
 .rotate-button {
@@ -144,6 +143,7 @@
 /* 修改close按钮样式，使其与rotate-button对齐 */
 button.close {
     color: #143753;
+    background-color: #ffd3e4;
     font-size: 40px;
     font-weight: bold;
     width: 60px;
@@ -153,11 +153,11 @@ button.close {
     align-items: center;
     border: 2px solid #ffd3e4;
     border-radius: 50%;
-    background: none;  /* 添加透明背景 */
     padding: 0;  /* 移除默认内边距 */
     margin: 0;  /* 移除默认外边距 */
     cursor: pointer;
     line-height: 1;  /* 确保文字垂直居中 */
+    transition: all 0.3s ease;
 }
 
 /* 保持hover效果不变 */
@@ -170,7 +170,7 @@ button.close:focus {
 
 /* 调整图片容器样式 */
 .modal-content img {
-    max-width: 100%;
+    max-width: 160%;
     max-height: 70vh;
     object-fit: contain;
     transition: transform 0.3s ease;
@@ -180,6 +180,11 @@ button.close:focus {
 @media screen and (max-width:1024px) {
     .design-section {
         width: 90%;
+    }
+
+    .design-image {
+        width: 90%;
+        height: auto;
     }
 }
 
