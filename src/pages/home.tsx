@@ -21,6 +21,7 @@ export const Home = () => {
     return (
         <div className='page-body'>
             <div style={styles.home} >
+                {/* 首頁Banner的動態文字 */}
                 <div className='home-banner'>
                     <ReactTyped
                         strings={[currentText.banner.bannerTitle1]}
@@ -50,7 +51,8 @@ export const Home = () => {
                         startDelay={language === "zh" ? 3200 : 6400}
                     />
                     <br />
-                    <a className='home-followButton' href='https://www.youtube.com/watch?v=-34xIBbxBn8'>
+                    {/* 初配信連結 */}
+                    <a className='home-followButton' href='https://www.youtube.com/watch?v=PPoyoohe36o' target='_blank' rel='noreferrer'>
                         <ReactTyped
                             strings={[currentText.banner.buttonText]}
                             typeSpeed={language === "zh" ? 40 : 30}
@@ -60,6 +62,7 @@ export const Home = () => {
                     </a>
                 </div>
 
+                {/* 首頁介紹 */}
                 <section className='home-section'>
                     <div style={styles.section1Container} className='home-section1Container'>
                         <div className='home-section1IntroArea'>
@@ -93,6 +96,8 @@ export const Home = () => {
                         </div>
                     </div>
                 </section>
+
+                {/* 粉絲形象 */}
                 <section id='header-tear' className='home-section'>
                     <div className='tear-div-container'>
                         <div className='tear-logo-container'>
@@ -107,6 +112,8 @@ export const Home = () => {
                         </div>
                     </div>
                 </section>
+
+                {/* 抖內連結 */}
                 <section id='header-donate' className='home-section' style={{ flexDirection: 'column' }}>
                     <h1>{currentText.section2.donate}</h1>
                     <ul>
@@ -130,6 +137,7 @@ export const Home = () => {
                         </li>
                     </ul>
                 </section>
+
                 {/* Minecraft Server */}
                 <section id='header-cheap-server' style={{ flexDirection: 'column', padding: '30px 0', listStyle: 'none', }}>
                     <img src={minecraftServer} alt="Lost" />

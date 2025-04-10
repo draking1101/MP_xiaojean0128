@@ -1,6 +1,6 @@
 {
   "name": "xiaojean0128",
-  "version": "1.1.19.2",
+  "version": "1.1.19.3",
   "private": true,
   "dependencies": {
     "@craco/craco": "^7.1.0",

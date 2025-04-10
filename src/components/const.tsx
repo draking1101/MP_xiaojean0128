@@ -84,7 +84,7 @@ export const TEXT = {
                 bannerTitle2: "I loves drawing, singing, and gaming.",
                 bannerTitle3: "My simple wish is to bring you lots of happiness.",
                 bannerTitle4: "Feel free to scroll down to learn more about me ♡",
-                buttonText: "《Go to Virtual Debut Stream》",
+                buttonText: "《Go to Vtuber 2.0 Highlights》",
             },
             section1: {
                 linkItem: {
@@ -152,35 +152,22 @@ export const TEXT = {
                     all: newsDetails.category[1],
                     activity: newsDetails.category[2],
                     announcement: newsDetails.category[3],
-                }
+                },
+                noNews: 'No news yet.',
             }
             , newsItem: [
-                {
-                    id: "0",
-                    category: newsDetails.category[3],
-                    demoImage: newsDetails.demoImage.id0,
-                    title: "About Extended Streaming Hours",
-                    description: "I’ve been putting in a lot of effort to rank up in the Extraordinary Journey but due to time constraints...",
-                    date: newsDetails.date.id0,
-                    content: "I’ve been putting in a lot of effort to rank up in the Extraordinary Journey but due to time constraints, the pressure is intense. If I can't achieve my goal by the end of Act 9, this series might come to the end ( I’ll still be ranking, just not as intensively).",
-                    content2: "However, I'll continue to work hard on my youtube channel with stream highlights, shorts, covers, and similar content.",
-                    content3: "So… if you haven’t watched the latest episode, go check it out! I need your support and love. Love you all!",
-                    linkText: "Click Me to Extraordinary Journey",
-                },
-                {
-                    id: "1",
-                    category: newsDetails.category[3],
-                    demoImage: newsDetails.demoImage.id1,
-                    title: "About the Recent Condition of My Throat",
-                    description: "After seeing the doctor, I've decided to let my throat rest and sing a bit less...",
-                    date: newsDetails.date.id1,
-                    content: "After seeing the doctor, I've decided to let my throat rest and sing a bit less.",
-                    content2: "If you want to hear some songs recently, feel free to subscribe to Yefeng!",
-                    content3: "He’ll be updating clips from the 520 and celebration song streams.",
-                    content4: "I’ll check the comments when I have time.",
-                    content5: "Feel free to leave your compliments or thoughts in the comments!",
-                    linkText: "Click Me to Song List",
-                }
+                // {
+                //     id: "0",
+                //     category: newsDetails.category[3],
+                //     demoImage: newsDetails.demoImage.id0,
+                //     title: "About Extended Streaming Hours",
+                //     description: "I’ve been putting in a lot of effort to rank up in the Extraordinary Journey but due to time constraints...",
+                //     date: newsDetails.date.id0,
+                //     content: "I’ve been putting in a lot of effort to rank up in the Extraordinary Journey but due to time constraints, the pressure is intense. If I can't achieve my goal by the end of Act 9, this series might come to the end ( I’ll still be ranking, just not as intensively).",
+                //     content2: "However, I'll continue to work hard on my youtube channel with stream highlights, shorts, covers, and similar content.",
+                //     content3: "So… if you haven’t watched the latest episode, go check it out! I need your support and love. Love you all!",
+                //     linkText: "Click Me to Extraordinary Journey",
+                // },
             ]
         },
         merch: {
@@ -243,6 +230,7 @@ export const TEXT = {
         design: {
             derivativeWork: {
                 title: 'Fan Art & Commission Rules',
+                item0: 'The hair has blue highlights. The face has blue X and pink J.',
                 item1: 'Any character illustrations can be used for commissions or fan art.',
                 item2: 'Use of images for profit or feeding into AI is prohibited.',
                 item3: 'No R18 content; borderline R16 content is acceptable.',
@@ -274,7 +262,7 @@ export const TEXT = {
                 bannerTitle2: "一個愛畫畫.唱歌.玩遊戲的普通人",
                 bannerTitle3: "簡單的心願是想帶給你們許多快樂",
                 bannerTitle4: '歡迎下滑了解更多關於我的事 ♡',
-                buttonText: '《前往觀看V皮初配信》',
+                buttonText: '《前往V皮2.0精華》',
             },
             section1: {
                 linkItem: {
@@ -341,35 +329,23 @@ export const TEXT = {
                     all: '所有',
                     activity: '活動',
                     announcement: '公告',
-                }
-            }
-            , newsItem: [
-                {
-                    id: "0",
-                    category: newsDetails.category[3],
-                    demoImage: newsDetails.demoImage.id0,
-                    title: "關於直播加班時間",
-                    description: "近期因為超凡之旅爬得很坐牢，加上10月私下爬分時的設定沒調整好...",
-                    date: newsDetails.date.id0,
-                    content: "近期因為超凡之旅爬得很坐牢，加上10月私下爬分時的設定沒調整好，以至於那段時間的素材都不能用很可惜，所以這系列結束前需要多花點時間在爬分(結束時會再另外做影片跟各位報告!)",
-                    content2: "平日不太開假日則盡量開4小時的台，除非臨時有事或身體不適會再提前告知，上班時會減少出現在群組的時間(上班時間為平日早八晚五有1小時午休)",
-                    content3: "下班後有機會出現在會員語音聊聊天，還有承諾各位加班倒數完前不會主動找聯動，將會把加班時間拿來陪大家聊天玩遊戲~",
-                    linkText: "點我前往超凡之旅",
                 },
-                {
-                    id: "1",
-                    category: newsDetails.category[3],
-                    demoImage: newsDetails.demoImage.id1,
-                    title: "關於近期喉嚨狀態 ",
-                    description: "看了醫生後決定讓喉嚨休養少唱點歌近期想聽歌的可以去訂閱夜楓呦...",
-                    date: newsDetails.date.id1,
-                    content: "看了醫生後決定讓喉嚨休養少唱點歌",
-                    content2: "近期想聽歌的可以去訂閱夜楓呦",
-                    content3: "他會陸續更新520及過勾歌回的剪輯",
-                    content4: "而且留言我有空的話都會去看的",
-                    content5: "歡迎留言留下你的讚美或看法",
-                    linkText: "點我前往歌單",
-                }
+                noNews: '目前沒有任何消息',
+            },
+            newsItem: [
+                // 範本
+                // {
+                //     id: "0",
+                //     category: newsDetails.category[3],
+                //     demoImage: newsDetails.demoImage.id0,
+                //     title: "關於直播加班時間",
+                //     description: "近期因為超凡之旅爬得很坐牢，加上10月私下爬分時的設定沒調整好...",
+                //     date: newsDetails.date.id0,
+                //     content: "近期因為超凡之旅爬得很坐牢，加上10月私下爬分時的設定沒調整好，以至於那段時間的素材都不能用很可惜，所以這系列結束前需要多花點時間在爬分(結束時會再另外做影片跟各位報告!)",
+                //     content2: "平日不太開假日則盡量開4小時的台，除非臨時有事或身體不適會再提前告知，上班時會減少出現在群組的時間(上班時間為平日早八晚五有1小時午休)",
+                //     content3: "下班後有機會出現在會員語音聊聊天，還有承諾各位加班倒數完前不會主動找聯動，將會把加班時間拿來陪大家聊天玩遊戲~",
+                //     linkText: "點我前往超凡之旅",
+                // },
             ]
         },
         merch: {
@@ -431,6 +407,7 @@ export const TEXT = {
         design: {
             derivativeWork: {
                 title: '二創委託規則',
+                item0: '瀏海有藍色挑染.臉上有藍X&粉J',
                 item1: '可使用任何形象立繪委託或二創',
                 item2: '禁止將圖拿來盈利或投餵AI使用',
                 item3: '禁止R18創作，R16擦邊圖可接受',

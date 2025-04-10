@@ -41,6 +41,7 @@ export const Design = () => {
                         {currentText.derivativeWork.title}
                     </h1>
                     <ul className='rule-list' style={{ display: 'flex', flexDirection: 'column' }}>
+                        <li>{currentText.derivativeWork.item0}</li>
                         <li>{currentText.derivativeWork.item1}</li>
                         <li>{currentText.derivativeWork.item2}</li>
                         <li>{currentText.derivativeWork.item3}</li>
@@ -83,7 +84,7 @@ export const Design = () => {
                             src={modalImage}
                             alt="Modal View"
                             style={{
-                                width: imageRotation % 180 === 90 ? '160%' : '100%',
+                                width: imageRotation % 180 === 90 ? '160%' : '160%',
                                 height: imageRotation % 180 === 90 ? '100%' : '100%',
                                 transform: `rotate(${imageRotation}deg)`,
                                 transition: 'transform 0.3s ease, width 0.3s ease, height 0.3s ease',

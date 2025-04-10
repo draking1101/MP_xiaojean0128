@@ -63,20 +63,28 @@ export const News = () => {
                 </div>
 
                 <div className="news-list">
-                    {[...filterNews()].reverse().map((news, index) => (
-                        <div
-                            key={index}
-                            className="news-item"
-                            onClick={() => openNewsDetails(news)}
-                        >
-                            <img src={news.demoImage} alt={news.title} className="news-image" />
-                            <div className="news-content">
-                                <h2 className='news-content-title'>{news.title}</h2>
-                                <p className='news-content-description'>{news.description}</p>
-                                <p className="news-content-date">{news.date}</p>
+                    {filterNews().length > 0
+                        // 如果有消息
+                        ? [...filterNews()].reverse().map((news, index) => (
+                            <div
+                                key={index}
+                                className="news-item"
+                                onClick={() => openNewsDetails(news)}
+                            >
+                                <img src={news.demoImage} alt={news.title} className="news-image" />
+                                <div className="news-content">
+                                    <h2 className='news-content-title'>{news.title}</h2>
+                                    <p className='news-content-description'>{news.description}</p>
+                                    <p className="news-content-date">{news.date}</p>
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        ))
+                        // 如果沒有任何消息
+                        : (
+                            <div className='news-list-empty'>
+                                <p>{currentText.newsBody.noNews}</p>
+                            </div>
+                        )}
                 </div>
 
                 {/* 詳細內容模態框 */}
