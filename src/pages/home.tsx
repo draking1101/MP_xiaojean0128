@@ -120,12 +120,9 @@ export const Home = () => {
                         <li>{currentText.section2.item1}</li>
                         <li>{currentText.section2.item2}</li>
                         <li id='header-donate-link'>
-                            <a href="https://payment.ecpay.com.tw/Broadcaster/Donate/666577222BF8531D4175DD355DC6FAD7"
+                            <a href="https://deerdonate.herokuapp.com/donation/小靜しずか"
                                 target="_blank" rel="noreferrer">
                                 {currentText.section2.Link1}
-                            </a>
-                            <a href="https://payment.opay.tw/Broadcaster/Donate/658E154B04738822369BC4C46E432F3D" target="_blank" rel="noreferrer">
-                                {currentText.section2.Link2}
                             </a>
                             {/* Remove PayPal Because of security issues, refer to https://x.com/iluyee161/status/1883712399020335297?s=46 */}
                         </li>

@@ -130,9 +130,7 @@ export const TEXT = {
                 item1: "If you’d like to support me, feel free to donate!",
                 item2: "But please make sure you’ve eaten and donate within your means.",
                 item3: "List of Past Donation Gifts.",
-                Link1: "【Greenworld】",
-                Link2: "【O’Pay】",
-                Link3: "【PAYPAL】",
+                Link1: "【Valleydeer】",
             },
             section3: {
                 linkText: "Discord Group",
@@ -308,9 +306,7 @@ export const TEXT = {
                 item1: "想支持我的話歡迎斗內",
                 item2: "不過請吃飽並量力而為",
                 item3: "歷史斗內贈禮名單",
-                Link1: "【綠界】",
-                Link2: "【歐富寶】",
-                Link3: "【PAYPAL】",
+                Link1: "【山羌斗內】",
             },
             section3: {
                 linkText: "DC群",
