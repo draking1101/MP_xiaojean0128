@@ -52,7 +52,7 @@ export const Home = () => {
                     />
                     <br />
                     {/* 初配信連結 */}
-                    <a className='home-followButton' href='https://www.youtube.com/watch?v=PPoyoohe36o' target='_blank' rel='noreferrer'>
+                    <a className='home-followButton' href='https://youtu.be/8Elq9cp8se8?si=ekW3xpp2L36_L3u6' target='_blank' rel='noreferrer'>
                         <ReactTyped
                             strings={[currentText.banner.buttonText]}
                             typeSpeed={language === "zh" ? 40 : 30}

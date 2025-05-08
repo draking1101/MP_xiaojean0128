@@ -84,7 +84,7 @@ export const TEXT = {
                 bannerTitle2: "I loves drawing, singing, and gaming.",
                 bannerTitle3: "My simple wish is to bring you lots of happiness.",
                 bannerTitle4: "Feel free to scroll down to learn more about me ♡",
-                buttonText: "《Go to Vtuber 2.0 Highlights》",
+                buttonText: "《Go to Vtuber Self Intro》",
             },
             section1: {
                 linkItem: {
@@ -260,7 +260,7 @@ export const TEXT = {
                 bannerTitle2: "一個愛畫畫.唱歌.玩遊戲的普通人",
                 bannerTitle3: "簡單的心願是想帶給你們許多快樂",
                 bannerTitle4: '歡迎下滑了解更多關於我的事 ♡',
-                buttonText: '《前往V皮2.0精華》',
+                buttonText: '《前往VT一問一答》',
             },
             section1: {
                 linkItem: {
