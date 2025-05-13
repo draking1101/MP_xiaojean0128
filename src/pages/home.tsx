@@ -120,19 +120,19 @@ export const Home = () => {
                         <li id='header-donate-link'>
                             <a href="https://deerdonate.herokuapp.com/donation/小靜しずか"
                                 target="_blank" rel="noreferrer">
-                                <u>{currentText.section2.Link1}</u>
+                                {currentText.section2.Link1}
                             </a>
                             |
                             <a href="https://reurl.cc/NYDy1k"
                                 target="_blank" rel="noreferrer">
-                                <u>{currentText.section2.Link2}</u>
+                                {currentText.section2.Link2}
                             </a>
                             {/* Remove PayPal Because of security issues, refer to https://x.com/iluyee161/status/1883712399020335297?s=46 */}
                         </li>
                         <li>
                             <a href="https://docs.google.com/spreadsheets/d/1TjnjalZ_7pMc8rbbINDAwAyPbCDrVy49r3A2YDErcHI/edit?usp=sharing"
                                 target="_blank" rel="noreferrer">
-                                <u>{currentText.section2.item3}</u>
+                                {currentText.section2.item3}
                             </a>
                         </li>
                     </ul>
