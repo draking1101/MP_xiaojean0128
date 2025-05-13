@@ -117,19 +117,22 @@ export const Home = () => {
                 <section id='header-donate' className='home-section' style={{ flexDirection: 'column' }}>
                     <h1>{currentText.section2.donate}</h1>
                     <ul>
-                        <li>{currentText.section2.item1}</li>
-                        <li>{currentText.section2.item2}</li>
                         <li id='header-donate-link'>
                             <a href="https://deerdonate.herokuapp.com/donation/小靜しずか"
                                 target="_blank" rel="noreferrer">
-                                {currentText.section2.Link1}
+                                <u>{currentText.section2.Link1}</u>
+                            </a>
+                            |
+                            <a href="https://reurl.cc/NYDy1k"
+                                target="_blank" rel="noreferrer">
+                                <u>{currentText.section2.Link2}</u>
                             </a>
                             {/* Remove PayPal Because of security issues, refer to https://x.com/iluyee161/status/1883712399020335297?s=46 */}
                         </li>
                         <li>
                             <a href="https://docs.google.com/spreadsheets/d/1TjnjalZ_7pMc8rbbINDAwAyPbCDrVy49r3A2YDErcHI/edit?usp=sharing"
                                 target="_blank" rel="noreferrer">
-                                {currentText.section2.item3}
+                                <u>{currentText.section2.item3}</u>
                             </a>
                         </li>
                     </ul>

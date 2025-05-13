@@ -112,16 +112,18 @@
 }
 
 #header-donate ul {
-    text-align: center;
+    text-align: left;
     margin-top: 10px;
-    width: 70%;
     line-height: 45px;
 }
 
 #header-donate li {
-    list-style: none;
     font-size: 18px;
     color: #D4EDFF;
+}
+
+#header-donate li a{
+    padding: 0 10px;
 }
 
 /* Cheap Server */
