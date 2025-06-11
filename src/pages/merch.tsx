@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 // Styles
 import '@/styles/merch.css';
 // Components
-import { images, links, TEXT } from '@/components/const';
+import { images, TEXT } from '@/components/const';
 import { useLanguage } from '@/components/LanguageContext';
 // Interface
 import { MerchItemProps } from '@/components/interface';
@@ -11,7 +11,6 @@ export const Merch = () => {
     const { language } = useLanguage();
     const currentText = TEXT[language].merch;
     const defaultImg = images.merch.default
-    const merch = images.merch;
 
     // 新增狀態來控制模態框的顯示
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -20,85 +19,21 @@ export const Merch = () => {
     const merchCategory = [currentText.category.limited, currentText.category.regular, currentText.category.discontinued]
 
     const MerchItem = [{
-        //     // 一周年回饋
-        //     id: 1,
-        //     category: currentText.category.discontinued,
-        //     showLink: false,
-        //     imgSrc: merch.anniversary_1st,
-        //     title: currentText.title.anniversary_1st
-        // }, {
-        //     // 千人訂閱
-        //     id: 2,
-        //     category: currentText.category.discontinued,
-        //     showLink: false,
-        //     imgSrc: merch.thousandSub,
-        //     title: currentText.title.thousandSub
-        // }, {
-        //     // 二周年募資限定
-        //     id: 3,
-        //     category: currentText.category.discontinued,
-        //     showLink: false,
-        //     imgSrc: merch.crowdfunding_designVersion_2,
-        //     title: currentText.title.anniversary_2nd_crowdfunding
-        // }, {
-        //     // 二周年
-        //     id: 4,
-        //     category: currentText.category.discontinued,
-        //     showLink: false,
-        //     imgSrc: merch.anniversary_2nd,
-        //     title: currentText.title.anniversary_2nd
-        // }, {
-        //     // FF43
-        //     id: 5,
-        //     category: currentText.category.discontinued,
-        //     showLink: false,
-        //     imgSrc: merch.ff43,
-        //     title: currentText.title.ff43
-        // }, {
-        // Line貼圖
+        // Line個人原創商品
         id: 6,
         category: currentText.category.regular,
         showLink: true,
-        imgSrc: merch.regular.lineSitcker,
+        imgSrc: require('@/assets/xiaojean/B.周邊/lineSticker.png'),
         title: currentText.title.lineSticker,
-        link: links.merch.lineSitcker
+        link: "https://store.line.me/stickershop/author/4563761/zh-Hant"
     }, {
-        // Line表情符號
-        id: 7,
+        // 小靜的心結小舖
+        id: 12,
         category: currentText.category.regular,
         showLink: true,
-        imgSrc: merch.regular.lineEmoji,
-        title: currentText.title.lineEmoji,
-        link: links.merch.lineEmoji
-        // }, {
-        //     // 2025生日周邊
-        //     id: 8,
-        //     category: currentText.category.discontinued,
-        //     showLink: false,
-        //     imgSrc: merch.birthday2025,
-        //     title: currentText.title.birthday2025
-        // }, {
-        //     // 聯名T恤短袖
-        //     id: 9,
-        //     category: currentText.category.discontinued,
-        //     showLink: false,
-        //     imgSrc: merch.co_branding_Tshirt_black,
-        //     title: currentText.title.co_branded_Tshirt.A
-        // }, {
-        //     // 聯名T恤短袖
-        //     id: 10,
-        //     category: currentText.category.discontinued,
-        //     showLink: false,
-        //     imgSrc: merch.co_branding_Tshirt_white,
-        //     title: currentText.title.co_branded_Tshirt.B
-    }, {
-        // Line小靜2.0
-        id: 11,
-        category: currentText.category.regular,
-        showLink: true,
-        imgSrc: merch.regular.lineSticker_2,
-        title: currentText.title.lineSticker_2,
-        link: links.merch.lineSticer_2
+        imgSrc: require('@/assets/xiaojean/B.周邊/merchShop.jpg'),
+        title: currentText.title.merchShop,
+        link: "https://kusdom.com/xiaojean0128"
     }]
 
     const openModal = (imageSrc) => {
@@ -142,7 +77,7 @@ export const Merch = () => {
                     {/* 如果絕版類別沒商品時顯示 */}
                     {category === currentText.category.discontinued && MerchItem.filter((item) => item.category === category.discontinued).length === 0 && (
                         <li className='merch-item'>
-                            <img src={defaultImg} alt="Lost" />
+                            <img src={require('@/assets/xiaojean/B.周邊/limited_merch.jpeg')} alt="Lost" />
                             <p className="merch-item-title">{language === 'zh' ? '商品資訊放在IG' : 'Information about discontinued products is placed on IG'}</p>
                             <button onClick={() => openModal(defaultImg)}>{language === 'zh' ? '檢視圖片' : 'View Image'}</button>
                             <a

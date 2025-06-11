@@ -29,19 +29,6 @@ export const links = {
 export const images = {
     merch: {
         default: require('@/assets/xiaojean/A.無分類/010-揮金如土.png'),
-        regular: {
-            lineSitcker: require('@/assets/xiaojean/B.周邊/007-Lline貼圖(去背).png'),
-            lineSticker_2: require('@/assets/xiaojean/B.周邊/lineSticker_2.png'),
-            lineEmoji: require('@/assets/xiaojean/B.周邊/008-Lline表情符號(去背).png'),
-        },
-        thousandSub: require('@/assets/xiaojean/B.周邊/002-千訂回饋周邊.png'),
-        ff43: require('@/assets/xiaojean/B.周邊/006-FF43周邊.jpg'),
-        anniversary_1st: require('@/assets/xiaojean/B.周邊/001-一周年回饋.png'),
-        anniversary_2nd: require('@/assets/xiaojean/B.周邊/005-二周年回饋.png'),
-        crowdfunding_designVersion_2: require('@/assets/xiaojean/B.周邊/003-2.0募資限定周邊.jpg'),
-        birthday2025: require('@/assets/xiaojean/B.周邊/birthday/birthday2025.png'),
-        co_branding_Tshirt_black: require('@/assets/xiaojean/B.周邊/co-branded/co_branding_Tshirt_black.png'),
-        co_branding_Tshirt_white: require('@/assets/xiaojean/B.周邊/co-branded/co_branding_Tshirt_white.png'),
     },
     design: {
         historyDesign: {
@@ -176,18 +163,7 @@ export const TEXT = {
             title: {
                 commingSoon: '《Coming Soon》',
                 lineSticker: "Line Stickers",
-                lineSticker_2: "Line Stickers 2.0",
-                lineEmoji: "Line Emojis",
-                thousandSub: '1K Subscribers',
-                ff43: 'FF43',
-                anniversary_1st: '1st Anniversary',
-                anniversary_2nd: '2nd Anniversary',
-                anniversary_2nd_crowdfunding: '2.0 Crowdfunding',
-                birthday2025: '2025 Birthday',
-                co_branded_Tshirt: {
-                    A: '2025 XinJieT(Short)',
-                    B: '2025 XinJieT(Long)',
-                }
+                merchShop: "Merch Shop",
             },
             link: {
                 commingSoon: '《Coming Soon》',
@@ -350,19 +326,8 @@ export const TEXT = {
             },
             title: {
                 commingSoon: '敬請期待',
-                lineSticker: "小靜Line貼圖",
-                lineSticker_2: "小靜2.0Line貼圖",
-                lineEmoji: "小靜Line表情符號",
-                thousandSub: '千訂回饋',
-                ff43: 'FF43',
-                anniversary_1st: '一週年回饋',
-                anniversary_2nd: '二週年回饋',
-                anniversary_2nd_crowdfunding: '2.0募資限定',
-                birthday2025: '2025生日周邊',
-                co_branded_Tshirt: {
-                    A: '小靜心結T(短袖)',
-                    B: '小靜心結T(長袖)',
-                }
+                lineSticker: "Line貼圖",
+                merchShop: "心結小舖",
             },
             link: {
                 commingSoon: '《敬請期待》',
