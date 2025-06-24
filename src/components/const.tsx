@@ -80,7 +80,7 @@ export const TEXT = {
                         subtitle: 'Regular Streams, Event Stories',
                     },
                     youtube: {
-                        title: 'YouTube',
+                        title: 'Youtube',
                         subtitle: 'Live Videos, Song Covers',
                     },
                     twitter: {
