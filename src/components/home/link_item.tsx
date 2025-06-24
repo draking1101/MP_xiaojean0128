@@ -8,7 +8,7 @@ export const LinkItem = ({ href, imgSrc, imgAlt, title, subtitle }) => (
             <img style={styles.section1LinkItemImage} src={imgSrc} alt={imgAlt} />
             <div style={styles.section1LinkItemContentContainer}>
                 <h1 style={styles.section1LinkItemContentTitle}>{title}</h1>
-                <p style={styles.section1LinkItemContentSubtitle}>{subtitle}</p>
+                {/* <p style={styles.section1LinkItemContentSubtitle}>{subtitle}</p> */}
             </div>
             <FontAwesomeIcon style={styles.section1LinkItemIcon} color='#ccccff' className="FontAwesomeIcon" size='2x' icon={RegularCircleRight} />
         </a>
