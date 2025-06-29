@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 // Images
-import logo from "@/assets/xiaojean/A.無分類/008-rainyDoll.png"  // Logo
+import logo from "@/assets/header/favicon.png"  // Logo
 // Styles
 import '@/styles/header.css';  // 導入CSS
 // Components

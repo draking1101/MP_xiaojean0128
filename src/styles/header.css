@@ -45,6 +45,7 @@
 .header-logo {
     cursor: 'pointer';
     height: 70px;
+    padding: 14px;
 }
 
 .header-logo-text {

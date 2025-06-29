@@ -215,7 +215,7 @@ export const TEXT = {
             },
         },
         footer: {
-            text: `This website was designed by Xiaotian ${WEB_DETAILS.version} ・ Powered by React @ 2024`,
+            text: `This website was designed by Xiaotian ${WEB_DETAILS.version} ・ Powered by React @ 2025`,
         }
     },
     zh: {
@@ -378,7 +378,7 @@ export const TEXT = {
             },
         },
         footer: {
-            text: `本站由 龍嘯天 所設計 ${WEB_DETAILS.version} ・ Powered by React @ 2024`
+            text: `本站由 龍嘯天 所設計 ${WEB_DETAILS.version} ・ Powered by React @ 2025`
         }
     },
 };
