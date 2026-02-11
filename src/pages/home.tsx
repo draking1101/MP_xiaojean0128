@@ -112,7 +112,7 @@ export const Home = () => {
                 </section>
 
                 {/* 抖內連結 */}
-                <section id='header-donate' className='home-section' style={{ flexDirection: 'column' }}>
+                <section id='header-donate' className='home-section' style={{ flexDirection: 'column', display: "none" }}>
                     <h1>{currentText.section2.donate}</h1>
                     <ul>
                         <li id='header-donate-link'>

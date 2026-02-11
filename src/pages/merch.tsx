@@ -19,15 +19,15 @@ export const Merch = () => {
     const merchCategory = [currentText.category.limited, currentText.category.regular, currentText.category.discontinued]
 
     const MerchItem = [
-        // {
-        //     // 2026 生日周邊
-        //     id: 13,
-        //     category: currentText.category.limited,
-        //     showLink: false,
-        //     imgSrc: require('@/assets/xiaojean/B.周邊/lineSticker.png'), // // 生日後再放上圖片
-        //     title: currentText.title.birthday2026,
-        //     link: "https://store.line.me/stickershop/author/4563761/zh-Hant" // 生日後再放上連結
-        // },
+        {
+            // 2026 生日周邊
+            id: 13,
+            category: currentText.category.limited,
+            showLink: true,
+            imgSrc: require('@/assets/xiaojean/B.周邊/birthday/birthday2026.png'),
+            title: currentText.title.birthday2026,
+            link: "https://myship.7-11.com.tw/general/detail/GM2412279708442"
+        },
         {
             // Line個人原創商品
             id: 6,
